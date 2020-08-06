@@ -1,0 +1,31 @@
+if getter method is not there auto conversion will not happpen
+
+v16 answers many ques abt disptcher servlet
+
+
+responseEntityExceptionHandler  is abstrct class which can be extended to provide centralzed exceptn hndling
+
+vd 24 and v26 for exception handling and validation
+
+hateoas-->  hyper media as engine of application state
+
+spring boot hateoas starter enables us to easily add links usig the methods
+
+hateoas concept need understanding
+
+spring cloud config server takes form git repository
+
+
+
+feign helps to call other micro serves
+it provides integration with ribbon which is client side load balancing framework
+feign is rest service client
+makes it easay to call rest ful web servcs
+with feign , i need to define a proxy for a sercvc
+we can use proxy to make call to the servoce
+it talk to the service
+
+ribbon makes use of feign confighelps us distribute the call to diff instances of particlulr micro servcs
+
+eureka 
+service registrtion n servc discovry
