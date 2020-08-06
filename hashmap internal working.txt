@@ -1,0 +1,68 @@
+hashmap
+
+---------
+hashing
+---------
+large string/object --> short fixed length
+helps in faster indexing
+
+every object has hash code method
+
+if 2 obj are equal,they have same hashcode
+
+if 2 obj have same hashcode, then they might not be equal
+
+
+equals() and hashcode()
+hashcode() used in storing values in hashmap
+
+
+hashmap has aray of nodes
+each index is 
+default size of table in hashmap is 15
+
+hash of null is zero
+
+map
+K,V
+abc,1
+aaa,2
+aab,3
+
+------------------
+Mechanism
+------------------
+ON PUTTING ELEments in map,it will create an array of bucket
+size of array bucket =16
+each bucket is node
+each node is linkedlist 
+map has key and value
+on declaring an array,an array of bucket will be created
+on using put("abc",1), first , hash code of key needs to be calculated..::
+hashcode = hash(key)
+hashcode will make in faster retrieval of key
+
+key=abc, so hashcode of abc will be calculated...say 1111112
+array value will be generated..which will be very big..it is not possible
+
+index = hash & (n-1)........returns an index...index is one of the bucket
+so using key, we have calculated hashcode.
+hashcode is computed and with hash &(n-1) we will get index..say 4
+so abc goes to 4th index
+[hashcode,key,value,null] will be inside bucket/linkedlist/node 
+
+hash collision
+assume,("aab",1) & ("abc",2) have same hashcode
+index becomes say = 4 .....4 already has an entry from previous entry
+4 has a node with value present
+the prev node will now contain the address of the new node to be added in 4
+ the prev node will point to the new node
+ 
+ in map,we can enter null as key..say value is 5
+ hash of null is zero
+ 
+ $ symbols confirms that node is an inner class
+ node is a static inner clss...stores hash,key,vlue,next(address for next ll/node)
+ 
+ https://www.geeksforgeeks.org/stability-in-sorting-algorithms/
+ https://www.geeksforgeeks.org/chained-exceptions-java/

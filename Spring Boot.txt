@@ -1,0 +1,39 @@
+spring boot
+
+initizer
+to bootstap spring boot project
+
+What Are the Differences Between Spring and Spring Boot?
+
+dependency injection,
+data binding,
+ aspect-oriented programming,
+ data access
+ 
+1.
+Auto-configure applications based on the artifacts, 
+it finds on the classpath
+2.
+Provide non-functional features common to applications in production,
+such as security or health checks
+
+
+How to Disable a Specific Auto-Configuration?
+
+If we want to disable a specific auto-configuration,
+ we can indicate it using the exclude attribute of the @EnableAutoConfiguration annotation.
+ For instance, this code snippet neutralizes DataSourceAutoConfiguration:
+
+// other annotations
+@EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
+public class MyConfiguration { }
+If we enabled auto-configuration with the @SpringBootApplication annotation 
+— which has @EnableAutoConfiguration as a meta-annotation — we could disable auto-configuration with an attribute of the same name:
+
+// other annotations
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+public class MyConfiguration { }
+
+also disable an auto-configuration 
+with the spring.autoconfigure.exclude environment property
+spring.autoconfigure.exclude = org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration

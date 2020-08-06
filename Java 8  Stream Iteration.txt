@@ -1,0 +1,44 @@
+
+example of java 8 stream iteration
+
+if (null != rentalModifyRQ.getSelectedProducts() && !rentalModifyRQ.getSelectedProducts().isEmpty()) {
+				rentalModifyRQ.getSelectedProducts().stream()
+						.filter(product -> product.getDays() > 0 || rentalModifyRQ.getDays() > 0).forEach(product -> {
+							Integer secDays = rentalModifyRQ.getDays();
+							if (secDays > 0) {
+								if (oneTimeProduct.contains(product.getCode())) {
+									counterProductsMap.put(product.getCode(), lor);
+								} else {
+									counterProductsMap.put(product.getCode(),
+											product.getDays() > secDays ? lor : secDays);
+								}
+							} else {
+								counterProductsMap.put(product.getCode(), product.getDays());
+							}
+						});
+			}
+			
+			
+			
+			
+			
+			
+			if (null != resSummary.getInsuranceSummaryList()) {
+			List<Coverage> coverageList = new ArrayList<>();
+			resSummary.getInsuranceSummaryList().stream().forEach(insurance -> {
+				if (!CommonConstants.ESP.equals(insurance.getCode())) {
+					Coverage coverage = new Coverage();
+					coverage.setCoverageCode(CommonConstants.CDW.equals(insurance.getCode()) ? CommonConstants.LDW
+							: insurance.getCode());
+					if (null != insurance.getProtectionsDisplay()) {
+						coverage.setCoverageValue(
+								BooleanValue.TRUE.equals(insurance.getProtectionsDisplay().getSelected()) ? "YES"
+										: "NO");
+					}
+					coverageList.add(coverage);
+				}
+			});
+			if (!coverageList.isEmpty()) {
+				rental.setInsuranceList(coverageList);
+			}
+		}

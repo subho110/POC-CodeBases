@@ -1,0 +1,182 @@
+concurrent map interface methods 
+
+----------------
+concurrent map
+----------------
+
+concurrent map implements map interface
+
+1. object putIfAbsent(obj key,obj value)
+putIfAbsent and put
+
+put	
+if key is there , new value will replace old value 
+
+putIfAbsent
+if key is there,old value will not get replaced by new obj, no new entry
+if key is not there, new value will be added, entry will be done
+
+
+2.  Two ways to remove
+
+! remove(key)
+if key matches then remove happens
+
+
+!! boolean remove(obj key,obj value)
+
+chm 
+remove where both key and val is required,i.e if key is associated with specified value only
+
+if key and val both matches, then only remove happens
+
+
+3. boolean replace(obj key,obj oldValue,obj newValue)
+
+if key and value both matches, then replace old value with new value
+
+m.put(1,"abc")
+m.replace(1,"aab","def")
+sop = (1,"abc")
+no replace
+
+ 
+m.put(1,"abc")
+m.replace(1,"abc","def")
+sop = (1,"def") 
+ replace will happen
+ 
+--------------------
+concurrent hashmap 
+--------------------
+
+In chm , null is not allowed for key and value
+So it does not throws concurrent modification exception
+define initial capacity of normal hashmap , concurrent hashmap is 16...0-15
+To perform read operation,threads do not require lock..any no of lock can retreive
+hashmap is divided into 16 buckets
+So bucket level lock is required instead of total hashmap level lock
+At a time,16 threads can perform update operations.
+:::This locking is known as segment level locking/bucket level locking:::
+--Total hashmap will be divided into spec no of parts=16
+--By defination,this number is called concurrency level
+16 concurrent level means hashmap will be divided into 16 levels
+For each segment a separate lock will be maintained.
+
+------------------------------------------------------------
+::How conc hm is better than hashtable:::
+------------------------------------------------------------
+
+initial capacity = 16
+concurrency level = 16
+suppose concurrency level is 8
+but initial capacity =16
+
+bucket=initialCapacity
+       --------------- = 16/8=2 bucket
+	   concurrencyLevel
+	   
+
+bucket		initialCapacity
+------ =   --------------- = 16/8= 2 bucket per lock
+lock	   	concurrencyLevel
+
+
+
+so locks available are 8..ie for every 2  buckets, 1 lock will be there
+
+Sometimes concurrency level =32
+but initial capacity =16
+so in that case 2 locks will be maintained in each bucket.
+1 bucket will have 2 lock
+
+
+
+bucket=initialCapacity
+       --------------- = 16/32=2 bucket
+	   concurrencyLevel
+	   
+
+bucket		initialCapacity
+------ =   --------------- = 16/32=0.5 bucket
+lock	   	concurrencyLevel
+
+or
+
+lock		concurrencyLevel
+------ =   --------------- = 32/16= 2 lock per bucket
+bucket	   	initialCapacity
+
+
+
+underlying principle is hashtable
+Allows concurrent read operation and thread safe.
+
+
+ constructors of conc hm
+ 
+ chm hm = new chm()
+ chm hm = new chm(int initialCapacity)
+ chm hm = new chm(int initialCapacity,int fieldRatio)
+ chm hm = new chm(int initialCapacity,int fieldRatio,int concurrencyLevel)
+ chm hm = new chm()
+ 
+ 
+ Concurrent hashmap and Multi-threading
+ 
+ while main thread iterates, the other thread is allowed to perform any modification
+ but the updation, is it available to the iterator or not.....
+ ::There is no guranatee
+
+summary of chm 
+ thread safe,very good performance,no concurrent exception
+ 
+ fail fast
+ for normal map
+ if we modify underlying collection, cme will be raised
+ will fail very fast
+ iterator of hashmap
+ 
+ iterators of chm is fail safe
+ 
+------------------------------------------------------------------
+::::::::::: copyOnWriteArrayList (cowal)::::::::::::::::::
+------------------------------------------------------------------
+
+Thread safe version of ArrayList
+Creates a cloned copy of underlying ArrayList for every update operation at certain point
+Both will be synchronised automatically which is taken care by JVM internally
+
+As update operation will be performed on cloned copy..so there is no effect for threads which perform read operation
+Costly process because for every update operation a cloned copy will be created
+So this is best choice if several read operation and less no of write operation are required to perform
+Duplicate object is allowed
+insertion order is preserved
+heterogeneous obj allowed
+null insertion is possible
+implements serializable,cloneable,randomAccess Interfaces
+while one thread iterating copyOnWriteArrayList,other threads are allowed to modify 
+and we wont get any cme
+so this iterator is fail safe
+iterator of arraylist can do remove but cowal iterator cannot otherwise we get runtime exception saying unsupportedOperationException
+internally implements cowas
+ 
+cowal --> list  --> collection	
+
+boolean addIfAbsent(object o)
+
+int addALLAbsent(Collection c)
+ 
+------------------------------------------------------------------
+::::::::::: copyOnWriteArraySet (cowas)::::::::::::::::::
+ 
+thread safe version of set
+cowas is internally implemented by cowal
+insertion order is allowed
+duplicate object are not allowed
+multiple threads can perform read operation simultaneously
+but for update operation a separate cloned copy will be created
+Since for every update operation,a separate cloned copy will be created,which is costly
+so not recommended when higher no of update operation is there
+while one thread is iterating on set,other threads are allowed to modify set,we wont get cme
+remove operation not done by set iterator method , where we get runtime exception:unsupportedOperationException

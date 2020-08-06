@@ -1,0 +1,141 @@
+What is difference between Angular js and Angular? ​
+
+What is angular life cycle hooks? ​
+
+Could you explain services in Angular? ​
+
+What is the use of interface in Angular? ​
+
+What is the difference between Annotation and Decoration in Angular? ​
+
+What are the building blocks (component, Data Binding, DI, Directives, Metadata, Modules, Routing, Services, and Template etc) of Angular? ​
+
+What is AOT compilation? ​
+
+What is JIT compilation? ​
+
+What is i18? ​
+
+What is View Encapsulation?​
+
+How many ways of view encapsulation in Angular? ​
+
+What is RxJS? ​
+
+What is NGRX? ​
+
+What is TypeScript ? ​
+
+What is module? ​
+
+What is directive? ​
+
+What is a template? ​
+
+What is Data binding? ​
+
+How we can achieve one way data binding in angular? ​
+
+Should be use jquery in Angular? ​
+
+What is the use of @Input and @Output in Angular?​
+
+What is Meta data?​
+
+What is Angular CLI?​
+
+What is Workspace?​
+
+What is Service? ​
+
+What is dependency injection in angular?​
+
+What is the use of async pipe?​
+
+What is interpolation?​
+
+What is Bootstrapping?​
+
+What is change detection strategy?​
+
+What is lazy loading? How we can implement it.​
+
+How we can improve performance of angular application.​
+
+What is an observable?​
+
+How you can perform common error handing in angular?​
+
+What http interceptor. Give an example where it can use.​
+
+What is resolver? Give a scenario where it can use.​
+
+How we can create library in angular.​
+
+What is new in angular 9.​
+
+What are the DOM and the BOM?​
+
+​What are different types of filter in angular?​
+
+What is the use of $destroy?​
+
+What is Ivy?​
+
+What are advantage (smaller bundle size, Faster Testing, Improved build error, improved internationalization, improved build time, improve css class and styling binding, enable AOT by default) of Ivy compiler & run time in angular 9?​
+
+If a page load time is high , what would be the approach to optimize it?​
+
+How we can create a reusable components to use in multiple projects in a workspace?​
+
+What is the optimal way to send some information as a part of header for all http request?​
+
+-------------
+Angular JS
+-------------
+
+What is Angular JS?​
+
+What are the key features (services, filters, directives, scope, controller etc) of angular js?​
+
+What data binding or two-way data binding?​
+
+What is digest cycle?​
+
+What are performance improvement techniques in angular js?​
+
+How would you specify that a scope variable should have one-time binding only?​
+
+What is SPA?​
+
+What is route provider?​
+
+What is deep copy?​
+
+​What is shallow copy?​
+
+What is difference between prefix $ and $$?​
+
+Where should we implement the DOM manipulation in AngularJS?​
+
+How to make a function return promise in angular js?​
+
+How many types of Data binding is there in angular js?​
+
+What is the difference between ng-bind & ng-model directive?​
+
+What is difference between ng-if & ng-hide?​
+
+What is difference between ngRoute & ui-router?​
+
+What is the difference between factory & services?​
+
+How does interpolation, e.g. “{{ someModel }}”, works?​
+
+What is dependency injection? ​
+
+How can digest cycle time be decreased?​
+
+What is promise?​
+
+How we can execute some logic after getting response of asynchronous two or more api call.​

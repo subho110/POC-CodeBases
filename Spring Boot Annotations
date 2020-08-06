@@ -1,0 +1,352 @@
+Sprign annotations
+
+-----------
+Secured
+-----------
+The @Secured annotation is used to specify a list of roles on a method. 
+Hence, a user only can access that method if she has at least one of the specified roles.
+
+Let's define a getUsername method:
+
+@Secured("ROLE_VIEWER")
+public String getUsername() {
+    SecurityContext securityContext = SecurityContextHolder.getContext();
+    return securityContext.getAuthentication().getName();
+}
+Here, the @Secured(“ROLE_VIEWER”) annotation defines that only users who have the role ROLE_VIEWER are able to execute the getUsername method.
+
+Besides, we can define a list of roles in a @Secured annotation:
+
+@Secured({ "ROLE_VIEWER", "ROLE_EDITOR" })
+public boolean isValidUsername(String username) {
+    return userRoleRepository.isValidUsername(username);
+}
+In this case, the configuration states that if a user has either ROLE_VIEWER or ROLE_EDITOR, that user can invoke the isValidUsername method.
+
+
+----------------------
+SuppressWarnings 
+----------------------
+
+The @SuppressWarnings annotation type allows Java programmers to disable compilation warnings for a certain part of a program 
+(type, field, method, parameter, constructor, and local variable). 
+
+Compiler warning messages are usually helpful. Sometimes warnings can get noisy, though 
+specially when we can't or don't want to address them:
+
+public class Machine {
+    private List versions;
+ 
+    public void addVersion(String version) {
+        versions.add(version);
+    }
+}
+The compiler will issue a warning about this method. It'll warn that we're using a raw-typed collection. 
+If we don't want to fix the warning, then we can suppress it with the @SuppressWarnings annotation.
+
+This annotation allows us to say which kinds of warnings to ignore. 
+While warning types can vary by compiler vendor, the two most common are deprecation and unchecked.
+
+deprecation tells the compiler to ignore when we're using a deprecated method or type.
+
+unchecked tells the compiler to ignore when we're using raw types.
+
+So, in our example above, we can suppress the warning associated with our raw type usage:
+
+public class Machine {
+    private List versions;
+ 
+    @SuppressWarnings("unchecked")
+    // or
+    @SuppressWarnings({"unchecked"})
+    public void addVersion(String version) {
+        versions.add(version);
+    }
+}
+To suppress a list of multiple warnings, we set a String array containing the corresponding warning list:
+
+@SuppressWarnings({"unchecked", "deprecated"})
+
+
+--------------------------------------------
+@ApiOperation and @ApiResponses 
+--------------------------------------------
+We can add these annotations to any rest method in the controller to add basic information related to that method.
+
+@Api
+
+
+----------------------
+@RequestBody  @ResponseBody
+----------------------
+
+Annotation indicating a method parameter should be bound to the body of the web request. The body of the request is passed through an HttpMessageConverter to resolve the method argument depending on the content type of the request. Optionally, automatic validation can be applied by annotating the argument with @Valid.
+
+
+
+----------------------
+@Validated 
+----------------------
+
+
+
+
+
+----------------------
+@RestController 
+----------------------
+
+The job of @Controller is to create a Map of model object and find a view but 
+@RestController simply return the object and object data is directly written into HTTP response as JSON or XML.
+
+Types that carry this annotation are treated as controllers where @RequestMapping methods assume @ResponseBody semantics by default.
+
+Spring RestController annotation is used to create RESTful web services using Spring MVC.
+Spring RestController takes care of mapping request data to the defined request handler method. 
+Once response body is generated from the handler method, it converts it to JSON or XML response.
+
+, it shall be used in case of REST style controllers
+ i.e. handler methods shall return the JSON/XML response directly to client rather using view resolvers.
+
+A key difference between a traditional MVC @Controller and the RESTful web service @RestController 
+is the way that the HTTP response body is created. 
+Rather than relying on a view technology to perform server-side rendering of the data to HTML,
+ rest controller simply populates and returns the domain object itself.
+
+The object data is be written directly to the HTTP response 
+as JSON or XML and parsed by client to further process it 
+either for modifying the existing view or for any other purpose.
+
+----------------------
+@Log4j2 
+----------------------
+
+
+
+
+----------------------
+@Autowired 
+----------------------
+
+
+
+----------------------
+@InitBinder 
+----------------------
+
+
+----------------------
+@Override 
+----------------------
+
+
+----------------------
+@PathVariable 
+----------------------
+
+
+
+
+----------------------
+@RequestParam 
+----------------------
+
+
+
+
+----------------------
+@Value 
+----------------------
+
+
+
+
+----------------------
+@RequestMapping 
+----------------------
+
+
+
+
+----------------------
+@Component 
+----------------------
+
+
+
+----------------------
+@Bean 
+----------------------
+
+
+
+
+
+----------------------
+@Singleton
+----------------------
+
+
+----------------------
+@Scope("prototype")
+----------------------
+
+
+
+
+----------------------
+@@PostConstruct 
+----------------------
+CacheManagerFactory
+
+
+
+---------------
+@Target(FIELD)
+@Retention(RUNTIME)
+@Documented
+@Constraint
+----------------
+
+
+
+---------------------------------------------------
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(securedEnabled = true)
+--------------------------------------------------
+SecurityConfig
+
+
+
+--------------------------------------------------
+@Configuration
+	@Order(1)
+@ConditionalOnProperty(name = "spring.session.remote", havingValue = "false")
+@EnableInfinispanEmbeddedHttpSession(maxInactiveIntervalInSeconds = 1800)
+@Configuration
+-------------------------------------------------------------------------------------------------
+SecurityConfig	
+	
+	
+-------------------------------------------------------------------------------------------------
+@ConditionalOnProperty(name = "spring.session.remote", havingValue = "false")
+@EnableInfinispanEmbeddedHttpSession(maxInactiveIntervalInSeconds = 1800)
+@Configuration
+
+----------------------------------------------------------------------------------------------------
+SessionConfigEmbeddedCache
+
+
+--------------------------------------------------
+@Configuration
+@EnableSwagger2
+--------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------------------
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.METHOD, ElementType.FIELD, ElementType.TYPE, ElementType.PARAMETER })
+@Retention(RetentionPolicy.RUNTIME)
+----------------------------------------------------------------------------------------------------
+ResponseView
+
+
+--------------------------------------------------
+@Getter
+@Setter
+@ToString
+@JsonInclude(Include.NON_EMPTY)
+
+--------------------------------------------------
+Address
+
+----------------
+@JsonIgnore
+----------------
+
+
+--------------------------------------------------
+@NotNull(message = "required")
+	@NotEmpty(message = "required value")
+	@Valid
+--------------------------------------------------
+FleetRQ
+
+
+
+
+
+
+
+----------------
+@Pattern
+----------------
+
+
+@JsonFormat
+
+@JsonSerialize
+
+@JsonProperty
+
+
+@Service
+
+@WebParam
+
+@WebServiceClient
+
+@WebEndpoint
+
+@ControllerAdvice
+
+@ExceptionHandler
+
+@ResponseStatus
+
+----------------------------------------------------------------------------------------------------
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = { CommonConstants.USERNAME, CommonConstants.PSWD })
+@XmlRootElement(name = "check_agents_AVIS")
+----------------------------------------------------------------------------------------------------
+CheckAgentsAVIS
+
+
+----------------------------------------------------------------------------------------------------
+@WebMethod(operationName = "check_agents_AVIS_NEWZEALAND", action = "http://tempuri.org/check_agents_AVIS_NEWZEALAND")
+	@WebResult(name = "check_agents_AVIS_NEWZEALANDResult", targetNamespace = "http://tempuri.org/")
+	@RequestWrapper(localName = "check_agents_AVIS_NEWZEALAND", targetNamespace = "http://tempuri.org/", className = "com.abg.webapi.wsdl.chat.CheckAgentsAvisCarsNZ")
+	@ResponseWrapper(localName = "check_agents_AVIS_NEWZEALANDResponse", targetNamespace = "http://tempuri.org/", className = "com.abg.webapi.wsdl.chat.CheckAgentsAvisCarsResponseNZ")
+----------------------------------------------------------------------------------------------------	
+CheckAgentsQueueSoapNZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

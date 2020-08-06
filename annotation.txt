@@ -1,0 +1,4 @@
+Annotation
+
+EnableWebSecurity
+tells to spring-security that this class is the web security configuration class.

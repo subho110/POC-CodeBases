@@ -1,0 +1,16 @@
+spring boot
+
+initizer
+to bootstap spring boot project
+
+What Are the Differences Between Spring and Spring Boot?
+
+dependency injection,
+data binding,
+ aspect-oriented programming,
+ data access
+ 
+Auto-configure applications based on the artifacts 
+it finds on the classpath
+Provide non-functional features common to applications in production,
+such as security or health checks

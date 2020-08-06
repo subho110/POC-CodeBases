@@ -1,0 +1,266 @@
+spring 
+
+dependency injection
+
+Dependency Injection is where Spring searches for beans; 
+once the appropriate bean is found, 
+it autowires the bean to the dependent class. 
+Dependency Injection is the process where Spring framework looks for the beans and identifies the dependencies,
+ and creates the instances of beans and autowires them.
+
+ioc
+
+In Tight Coupling the dependent class takes the responsibility of creating its dependency. 
+Whereas, in Loose Coupling, 
+we use @Autowired annotation over the dependency class (or reference) 
+and Spring takes control of creating the instance and injects the dependency.
+
+
+role of ioc
+
+(i) Find Beans
+(ii) Identify their dependencies and wire the dependencies
+(iii) Manage Lifecycle of the Bean (creation, processing, and destruction)
+
+
+
+
+
+initial name : interface 21 then changed to spring
+
+came as an answer/opponent for ejb
+
+awt and swing
+awt will use os libraries , so awt is heavy weight
+swing does not depend on windwos os, it just need jdk libraries
+
+ejb an dspeign
+ejb has dependency for application server, so heavy weight
+swing xan run without application server , just need spring
+ 
+using runtime poly and association(has-A relationship) spring is developed
+
+
+
+spring contains 5 modules
+
+spring ioc
+spring dao
+spring orm
+spring aop
+spring mvc
+spring jpa
+
+3.
+it is like HiberbateTemplate
+Hibernate extnsion
+in hibernate 4 objects are there
+configuration
+sessionFactory
+session
+transaction
+
+
+in spring orm we dont want to creat eany object
+as jdbc template is pre defined class having pre defined methods
+
+6.
+Repository(I)
+CRUDRepository()
+JPARepository
+
+IOC 
+
+Container
+
+can create objects/instances for POJO classes
+Can manage lifecycles of POJO classes
+can do dependency injection into POJO classes
+
+core container
+eg: Bean Factory
+
+spring xml
+
+dtd and xsd are required for validation of xml file
+By using SAX parser it will read your document
+By using parser,parser checks well formedness and validness
+
+So our ioc container internally using SAX parser it will read our document
+while reading our document it will chck for formedness and validness
+
+while loading these two container parsers 
+will check fr xml file docunnt
+in xxm lfile if they find any invalid/unformatted tag 
+then they will throw parsing exception
+they will throw at the time of loading  itself
+
+we can configure bean definition by using bean id and class
+
+when ioc will create object of bean class
+if users request..ie at the time user request
+
+bean defination
+
+<bean id="t"
+  class = "Test"/>
+  </bean>
+
+getBean()  --> getBean('t');
+
+
+<beans xsd>
+
+
+flow of spring framework
+
+first
+1.
+inversion of control
+trad way: creaet the oject by developers
+ioc container by using pojo classes and configuratio metadata
+produeces fully confugered and executable systen or application
+ie we write the pojo class and provide meta data in form of xl conf 
+and give it to spring framework/container andn it will give us object which we can use in our app
+
+two diff api are there two diff types of ioc containers
+bean factory--inteface
+
+
+applicationContext---impl of bean factory
+so it is better to use this
+
+this container wil load the xml files and then they will conctruct the obj for us
+we use either xml or annotation
+
+2.
+Dependency injection
+removing dependency from code
+makes it loose coupling
+
+2 types to resolve this di
+by constructor
+
+3.
+AOP
+
+here it is where we implement cross cutting concern
+provide modularity with aspect rathe rthan class
+aop breaks program loggic into dostinct parts called concerns
+increases modularity by cross cutting concerns
+
+cross cutting concenr can affect the entire application
+security is major cross cutting concern
+applicable throughout application and it affects entore application modules
+
+
+
+
+
+
+4.
+MVC
+design pattern where user sends request over presentation layer(ui or view)
+so request goes from view to controller
+controller proces the request from client or user
+controller proces the request from dataset,models reperesnets the dataset
+so data fromm data set will cone into controller and from there it will come to view and then to user as response
+
+there are problems with java enterprise application
+heavy weight components
+java framework- collection of java api or predefined code to solve some specific problems
+frmaework is a set of api..
+we want security, efficiency 
+less expenses, support
+if we use predefined code so will be  relaxed with these four things
+
+disadvantages with java framework
+restriction: 
+retricted to use api the way it is
+we cannot modify it
+
+code is public
+
+
+
+custom built features
+
+
+
+
+
+
+by setter method
+
+
+
+why use spring framework
+distinct division between bean and model and controller
+very flexible because it use interfaces
+ofer better integration with view technologies other than jsp
+
+diff with strut and hibernate
+application framework     
+light weighted
+layered architectiure
+loose coupling
+easy integration with orm technologies
+
+
+spring architecture
+layered architecture where base layer is core container
+--------------------------------------
+--------------------------------------
+core container has beans,core,context,spel
+
+core   	provides the fundamental parts of framework
+bean   	provides bean factory
+context medium to access any object defined and configured
+spel    provides a powerful expression language
+--------------------------------------
+--------------------------------------
+data access/Integration
+jdbc provides jdbc abstraction layer
+
+orm 
+provides integration layers 
+for popular object relational mapping api
+
+oxm  
+provides an abstration layer  
+
+jms
+contains features for producing and consumming messages
+
+transaction
+supports programmatic and declarative transaction management
+--------------------------------------
+------------------------------------
+web module focuses on 
+websocket,servlet,web,portlet
+
+websocket
+provides support for web socket based a two way communication
+between client and server
+
+servlet
+contains spring mvc implementation for web application
+
+
+web
+provides basic web oriented integration features
+
+portlet
+mvc implementation and also mirrors the functionality of web servlet module
+--------------------------------------
+--------------------------------------
+miscelleaneous
+aop
+
+aspects
+
+
+instrumentation
+
+
+messaging 

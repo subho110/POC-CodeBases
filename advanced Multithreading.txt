@@ -1,0 +1,450 @@
+advanced multithreading
+
+thread group
+contains grp of threads
+can contain sub thread groups also
+
+Threads that can be grouped in single unit, based on function is thread group
+-------------
+advantages
+-------------
+ 
+we can perform common operations vry easily
+main thread belong to which grp
+main method belongs to main thread 
+main thread belongs to main thread group
+
+in java,every thread group is child group of system directly/indirectly
+systems group acts as root for all threadgroups in java
+
+garbage collector,reference handler,attach listener--system level thread
+
+system group contains several system level threaads
+like finalizer,reference handler,signal dispatcher,attch listener
+
+class
+{
+p s v m()
+	{
+		sop(Thread.currentThread().getThreadGroup().getName());
+		sop(Thread.currentThread().getThreadGroup().getParent().getName());
+    }
+	
+}
+
+Thread
+.currentThread().......main thread
+.getThreadGroup()......main thread group
+.getParent()...........system thread group
+.getName().............
+
+-------------
+Thread Group
+-------------
+main group child of system group
+
+thread group is a java class
+it is present in java.lang
+it is direct child class of object
+
+---------------------------------------
+constructors of thread group
+---------------------------------------
+1.
+ThreadGroup g = new ThreadGroup(String groupName)
+
+It creates a new thread grp with speciifed grp name
+The parent of this new group is thread group of currently executing thread.
+ThreadGroup g = new ThreadGroup(" First Group");
+
+2.
+ThreadGroup g = new ThreadGroup(ThreadGroup m,String groupName)
+
+It creates a new thread grp with speciifed grp name 
+The parent of this new thread group is specified parent group.
+ThreadGroup g = new ThreadGroup(g," Second Group");
+
+
+
+---------------------------------------
+Methods of thread group
+---------------------------------------
+ 
+
+getName()
+
+setMaxPriority(int p)
+default max priority is 10
+
+threads in thread grp that already have higher priority wont be affected
+for newly added threads this max priority is applicable
+
+ThreadGroup.getParent()
+returns parent group of current thread
+
+void list()
+prints info about threadgroup to console
+
+int activeCount()
+Returns no of active thread present in thread group
+
+int activeGroupCount()
+returns no of active groups present in current thread group
+
+int enumerate(Thread[] t)
+to copy all active threads of this thresd group into provided thread array
+in this case sub thread group threads will also get considered
+
+int enumerate(ThreadGroup[] g)
+to copy all active sub thread groups into thread group array
+ 
+boolean isDaemon
+thread group is daemon group or not
+ 
+void setDaemon(boolean b)
+ 
+ 
+void interrupt()
+to interrupt waiting or sleeping thread present in thread group
+ 
+void destroy()
+to destroy thread group and its sub thread groups
+ 
+ 
+------------
+System Group 
+------------
+ wap to display all activwe thread names belongs to sytstem gtp and child grp
+ 
+o/p of above program ::
+
+Reference Handler..true
+Finalizer..true
+Signal Dispatcher..true
+Attach Listener..true
+main..false 
+
+------------------------
+java.util.concurrent
+------------------------
+
+problems with traditional synchronizer keyword 
+we are not having any flexibility to try for a lock without waiting
+there is no way to specify maximum waiting time for a thread to get lock
+so that thread will wait until getting the lock
+which may create performance problem,
+whcih may cause deadlock
+
+if a thread releases a lock then which waiting thread will get that lock
+we are not having any control on above issue
+there is no api to list out all waiting threads for a lock
+
+the synchroniser keyword is to be used compulsory 
+either at method level or within a method
+It is not possible to use acrss multiple methods
+
+so for this java.util.concurrent.locks package was introduced in 1.5
+it also provides several enhancements to programmer to provide more control on concurrency
+
+lock is interface
+re-entrant lock is implementation
+
+::lock interface::
+
+lock object is similar to implicit lock  acquired by thread to execute synchroniser method/block
+ lock implementation provide more features than traditional implicit lock
+
+methods of lock interface
+
+1.
+void lock()
+l.lock();
+we can use this method to acquire a lock 
+if lock is already available then current thread will get that lock 
+if lock is not already available then it will wait until getting the lock
+it is exqctly samr behavior of traditional synchronizer keyword
+
+2.
+boolean tryLock()
+
+if(l.lock())perform safe operation
+else perform alternate operation
+
+to acquire the lock without waiting
+if lock is available then threaad acquire the lock and return true
+if lock is not available this method return false and continue its execution without waiting
+in this case thread will enter into waiting state
+
+3.
+bolean tryLock(long time,TimeUnit.Hour)
+if lock is available then thread will get the lcok and continue its execution
+if lock is not available then thread will wait for until specified amount of time
+still if lcok is not available then thread can continue its execution
+
+timeunit is an enum
+java.util.concurrent.
+internally it is an abstract class
+enum is a grp of constant
+
+4. void lockInterruptibly()
+ acquires the lock if it is available and returns immediately
+ if lock is not available then it will wait 
+ while waiting if thread is interrupted then thred wont get the lock
+
+5.
+void unlock()
+to release a lock
+to call unlock method the current thread should acquire/own the lock
+otherwise runtime exception :: IllegalMonitorState Exception 
+
+--------------------
+::Re-entrant lock::
+--------------------
+implementation class of lock interface
+direct child class of object
+
+re-entrant means a thead can acquire same lock multiple times without any issue
+internally reentrant lock increments threads personal count whenever we call lock method 
+and decrements count value whenever threaad calls unlock method
+lock will be released whenever count reaches zero
+
+
+reentrantLock l = new reentrantLcok()
+creates new insrance of reentrant lcok
+
+reentrantLock l = new reentrantLcok(boolean fairness)
+creates re entrant lco kwith given fairness policy
+if fairness is true then longest waiting thread can acquire lock if it is available 
+it follows first come first serve policy
+if fairness is false then which waiting thread will get the chance we cant expect
+default value for fairness = false
+reentrantLock lock = new reentrantLock();//equal
+reentrantLock lock = new reentrantLock(true);
+reentrantLock lock = new reentrantLock(false);//equal
+
+important methods:: 17:35
+void lock()
+
+boolean tryLock()
+
+boolean tryLock(Long i , TimeUnit t)
+
+void lockInterruptibly()
+
+void unlock
+
+int getHoldCount()
+return no of hold on this lock by current thread
+
+
+boolean isHeldByCurrentThread()
+return true iff lock is hold by current threaad 
+
+int getQueueLength()
+returns no of threads waiting for the lock
+
+boolean hasQueuedThreads()
+returns true if any thread waiting to get the lock
+
+boolean isLocked()
+returns true if lock is acquired by same thread
+
+boolean isFair()
+returns true if fairness policy is set  with true value
+
+Thread getOwner()
+returns the thread which acquires the lock
+ 
+Collection getQueuedThreads()
+returns collection of threads which are waiting to get the lock
+
+
+
+
+
+
+https://dzone.com/articles/how-to-avoid-deadlock-in-java-threads-1
+https://dzone.com/articles/java-concurrency-in-depth-part-2?fromrel=true
+
+
+-----------------------------------
+Thread Pools/Executor Framework
+-----------------------------------
+
+Creating a new thread for every job 
+may create performance and memory problem
+To overcome this we should go for thread pool
+
+Thread pool is pool of already created threads ready to do our job
+Java 1.5 introduced thread pool framework to implement thread pools
+This framework is also known as executor framework
+ 
+preferred ways of running tasks
+they optimize multithreadinf capacity of java
+improve applic efficieny through optimal utilization of resources that can also be tuned
+uses threads pool internalyy in whch threads ar wrecycled and reusd
+
+::::::Explanation::::::::::
+provide one or more task to executor for execution
+in this way the executor decouples task submmission
+ from thread creation and manageent process
+each thread in pool after executing a task
+that same thread picks up next task from the queue and executes it
+the thread continue to do so till the queue becomes empty
+after that just block on task queue and wait for more task
+once all tasks are executed or PP IS GOING TO HUT DOWN
+we tell the executor service its services are no longer reqyured
+this we do by calling its shutdown method
+this will do shutdoewn and it will stop executing any new task dor execution
+all the tasks that were currently executing will continue to execution till completion
+all pending task in queue will be executed
+if required we can instruct the es to interrupt the running tasks too
+this we do by calling its shutdownnow method
+in this case it will not run the pending tasks
+
+there is only one wayo f creating and runnin threads using executor api
+
+	
+
+
+  
+ 
+Create thread pool using Executor Service
+
+ExecutorService service = Executors.newFixedThreadPool(3);
+
+runnable jobs should be executed
+pool of 3 threads are ready
+now we have to submit these runnable jobs to these framework
+
+===> service.submit(job)
+
+while designing web/application servers we can use thread pool concept
+multiple requests are going to come
+for every request a new thread is allocated that is responsible for this job
+after completing request processing it will come back to pool
+default thread pool size = 60
+we can custommize
+
+--------------
+Thread Local
+---------------
+
+purpose: to define thread specific local variable
+
+Introduced in 1.2. enhanced in 1.5 
+This class provides thread local variable.
+Thread local class maintains values per thread basis
+Each thread local object maintains a specific value like userId,TransactionId etc,for each thread that accesses that object .
+Thread can :
+	access its local value
+	can manipulate its value, even can remove its value
+	In every part of code which is executed by thread we can access its local variable
+
+example:: consider a servlet whcih invokes some business method
+now we have requirement to generate an unique transaction id for each and every request
+we also have to pass this transaction id to the business method
+For this requirement we can use thread local to maintain a separate transaction id for every request ie for every thread
+Thread local class introduced in 1.2 and enhanced in 1.5 
+thread local can be associated with thread scope
+Total code which is executed by thread has access to the correspondig thread local variables
+A thread can access its own local variables and cant access other thread's local variables
+once a thread enters into dead state all its local variables are by default eligible for garbage collection
+
+can be used to define thread scope
+for every  thread, a separate db connection is required
+a separate counter variable is required
+a separate customer id is required
+once we add a variable to thread local we can use this variable wherever this thread is used.
+for every thread if we need separate local copy we need thread local
+
+
+-------------
+Constructor
+------------
+ThreadLocal tl = new ThreadLocal()
+creates a thread local variable
+
+---------
+Methods
+---------
+	
+Object get()
+returns the value of thread local variable associated with current thread
+
+Object initialValue()
+returns initial Value of thread local variable associated with current Thread
+
+default implementation of this method returns null. 
+to custommize our value we habvbe to override
+
+void set(Object newValue)
+to set a new value 
+
+void remove()
+to remove the value of thread local variable associated with current thread
+
+ this method added in 1.5 newly
+ after removval if we are trying to access it will be reinitialised by invoking its initial value method
+
+----------------------------
+ThreadLocal vs Inheritance
+----------------------------
+
+InheritableThreadLocal Class
+
+Parent-thread's thread local variable by default not available to child thread
+If we want to make parent-thread's thread local variable value available to child thread then we should go for inheritable thread local class
+By default child thread value is exactly same as parent threads value
+But we can make customizable value for child thread by overriding childValue() method
+
+-------------
+constructor
+-------------
+InheritableThreadLocal itl = new InheritableThreadLocal()
+
+---------
+Methods
+---------
+InheritableThreadLocal is child class of thread local.
+So all methods present in thread local by default available to inheritableThreadlocal
+In addition to these methods it contains only one method
+
+public Object childValue(Object parentValue)
+
+get()
+
+set()
+
+initialValue()
+
+
+
+--------------------
+Fork Join Pool
+--------------------
+splits work into smaller /tasks and then submitted to thread pool
+process is called forking. 
+forking is recursuve process
+forking continues until a limit is reached where it is impossible to split into further tasks
+Main task waits until all sub tasks have completed their execution
+
+the main task then joins all individual results
+Then main task returns a single final result
+This is called joining
+In joinnig, results are collected
+and single data is built as an end result
+
+
+
+--------------------
+Volatile for concurrency
+--------------------
+
+provides two advanced
+
+visibility::
+if one thread changes value of variable 
+then change will be immediately visibile to other threaad reading the variable
+This is done by not allowing comppiler or jvm to allocate those variables in CPU registers
+//////

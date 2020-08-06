@@ -1,0 +1,217 @@
+Sample Interview questions  
+
+how is an entity manager configured (JPA)  
+
+java 8 features 
+
+What are the new features added in Java 7 and Java 8 
+
+lamda functions and why we use? <imp> 
+
+functional interface 
+
+relation between functional interface and lamda 
+
+jdbc steps to connect to a data base 
+
+difference between hashmap and concurrent hashmap 
+
+internal implementation of hashmap 
+
+how to consume rest services. 
+
+how to change the namespace  
+
+if we want to change the http respose status code how to do that <imp> 
+
+hibernate 1st level and 2nd level cache <imp> 
+
+name few collections which are thread safe 
+
+What is the significance of hashCode and equals method? <imp> 
+
+Employee e1 -> object with name “Manoj”  
+
+Employee e2 -> object with name “Manoj”  
+
+e1.equals(e2) -> what this will return. how is memory allocation happens for these two?<imp> 
+
+Diff between HashMap and HashTable <imp> 
+
+Diff between TreeSet and HashSet <imp> 
+
+Code snippet : Java8 thread features : executor service java code example  
+
+Code snippet : Strems example to filter out employees who has salary more than 10k <imp> 
+
+Code snippet: an example of using comparable interface to sort employees based on age <imp> 
+
+Achieving Dependency Injection in java without using springs <imp> 
+
+Insert data to Employee table using spring transaction  
+
+In profile based configuration environment (Ex : Cloud Config in spring boot), how will you achieve reloading of property value if is changed, without affecting runtime environment <imp> 
+
+Java API : how you expose and Employee entity CRUD operations as API, using REST or SOAP<imp> 
+
+Comparable interface and return type of compare to 
+
+write a program to perform aggregation split into 5 operations using thread async with java8 (Executor and callable).. This is from import statements, how to get object of executor, how will you invoke executor service and fetch result? Also benefits of this.. 
+
+program to transform char list to uppercase and print using stream 
+
+why are streams used 
+
+simple jdbc connection and how will you get jdbc connection with spring 
+
+modules of spring you worked on 
+
+simple project to perform curd operation on employee entity, annotations for controller, how will handle exception for the project, what http error codes 
+
+Difference between @Component and @Service in spring. <imp> 
+
+will service work of we annotate with component instead of service 
+
+how will you enable transaction with annotations 
+
+how is dependency injection achieved 
+
+reloading without spring cloud how? 
+
+how will you externalize property file values 
+
+Tell how Streams work internally? 
+
+Difference between Sequential and parallel streams 
+
+What is Spring IOC container & DI 
+
+Spring Bean life cycle & How do we mention bean scope , explain a scenario where you used in your project 
+
+Write the Singleton class code 
+
+Explain Spring MVC architecture 
+
+How do we integrate Hibernate with Spring 
+
+What does hibernate cfg & hbm files container 
+
+Annotations in Spring and Hibernate 
+
+Difference between BeanFactory and ApplicationContext 
+
+Explain Rest controller with example CRUD operations 
+
+Explain HashMap internal implementation 
+
+Which is the best Map to use in multi threaded environment and how ?( Concurrent HashMap) 
+
+There are multiple passengers (bulk) travelling in flight. We need to send an email to all of them. Which approach do u follow ? (Multi threading - Executors and Callable interface) <imp> 
+
+How do you secure a Rest URI ? 
+
+There are multiple microservices. We are processing a request which is in single transaction and process through all services. If something fails in in between micro service how do we come to know where it is failed and what is the issue ? at framework level 
+
+How to implement Hashcode, how to implement Equals method and write a sudocode <imp> 
+
+Questions related to Stream API usage and sudocode <imp> 
+
+Explain the scenario where Linkedlist is used in the projects 
+
+Explain the scenarios that best fit use of jpa vs jdbc 
+
+spring annotations  
+
+Spring transaction management related questions 
+
+Questions on comparable and comparator interfaces. 
+
+spring security related questions 
+
+how you will handle transactions on multiple databases 
+
+how you will implement restful web service. 
+
+second level cache configuration 
+
+what is setter and constructor dependency injection 
+
+what is @autowired. Explain it 
+
+have u used Date ?in java 8 
+
+what is hashmap, How it work, how u have implemented in  project. What will happen if we give duplicate key. 
+
+ 
+
+Domain related and other: 
+
+tell about yourself  
+
+previous project roles and responsibilities  
+
+Explain the previous project architeture 
+
+main terminologies of airline reservation  
+
+what are attributes required for airline booking like flights, itinerary, price,.. 
+
+where will be 5 years down the lane 
+
+What is a flight leg and flight segment ? 
+
+what is a PNR ? 
+
+Questions asked in Console project : 
+
+-> Difference between Hashtable and ConcurrentHashMap 
+
+-> If i want to do some operation once 3 threads completes their job and then start another two thread, how this can be done ? 
+
+-> different between Abstract class and functional interface  
+
+-> Difference between Collection and Stream 
+
+-> difference between self join and inner join 
+
+-> what are the microservice design patterns you have used in your project ? Explain with examples  
+
+-> Why Docker and kubernetes(k8) are used ? 
+
+-> How to dynamically configure different environments (TST, DEV, PROD) etc in spring boot ? 
+
+-> What is actuator ? 
+
+-> What all domains/services implemented in AWS ? 
+
+-> what all design patterns used in your last assignment? 
+
+-> What do you mean by micro service?  
+
+-> How do you troubleshoot a request in a microservice architecture?  
+
+-> starategies to improve the performance of your application? 
+
+-> Difference between dependecy injection and IOC ? 
+
+-> What type of dependency injection you prefer and why? 
+
+-> How to create WAR file in Spring boot ?  
+
+-> How to implement SSO ? 
+
+-> How to configure/implement Spring security ? 
+
+-> difference between RESt and SOAP 
+
+-> Difference between application.properties and application.yml file ? which one you will prefer. 
+
+-> how does different properties files are choosen based on type of environment (TST, DEV, PROD) is chosen in CI/CD ? 
+
+-> how will you provide security to your REST appliacation ? 
+
+-> Difference between DML and DDL ? TRUNK and DELETE is DML or DDL  
+
+-> Disadvantages of micro service development? 
+
+ 

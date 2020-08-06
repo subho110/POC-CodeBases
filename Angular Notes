@@ -1,0 +1,24 @@
+observable
+
+some servvices take long time to execute
+if we call it synchronosly
+then we call service and wait for response 
+so the entire browser will hang
+so we call all http services asynchronously
+
+it is one of best approach to implement to asynchronous op
+if we want ajax req using http module, so angular in turn makes use of this observable
+over here we know what url to call
+what should happen we get an response back
+what should happen when we get an error back
+we can define all that as part of an observable
+
+observable is not really executed 
+until we do a subscribe
+
+big adv 
+just declare what needs to be done
+then continue execute rest of the code	
+when response comes it will be appropiately handled
+
+ 

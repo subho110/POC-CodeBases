@@ -1,0 +1,28 @@
+design pattersn
+
+should prefer composition over inheritance
+should code for interface not implementation
+
+-----------------
+builder pattern
+-----------------
+
+class phone has 5 variables
+to create obj we need constructor
+so we need parameterized constructor
+also have tostring()
+class shop has main method
+for getting object of ohboe we have to pass 5 parameters, the correct sequence
+
+so 2 probelms 
+dont want to pass all parameters
+also sequnce needs to be correct
+
+so a design pattern needs to be used for solving this problem
+
+
+-----------------
+prototype pattern
+-----------------
+
+

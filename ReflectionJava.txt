@@ -1,0 +1,158 @@
+reflection
+
+process of analysing all capabilities of a particular class at runtime of replication
+to do this we need some api or predefined java classes  this is called reflection api
+
+uses
+compiler constructortion
+framwork , jvm , server , tools design
+to readl the declarative info  about the class , the compiler internally must use an api  
+
+class A{
+	A(int i){}
+}
+class Test{
+	p s v m()
+	{
+	Class.forName("A")
+	A a = (A)c.newInstance();
+	}
+}
+Class c = Class.forName("A");
+A a = (A)c.newInstance();
+
+A class bad code will be loaded to memory
+A class meta data,info about class A will be collected by jvm
+That will be stored in form of class object
+That class object is referred by c variable
+On c vaiable, if we access newInstance mmethod, jvm must create object for class abaout
+to create object for class a ,
+jvm has to search for zero arg constructor and non private constructor
+but here parameterized constructor is provided
+so an exception will be triggered...java.lang.InstantiationException
+  
+InstantiationException
+
+what jvm does internally
+has to read constructor detail from class  a 
+will check for whether zero arg constructor is present
+if available it will create object for class a 
+if not it wil throw InstantiationException
+so refection api must be used by jvm
+testing tool,debugging tools internally uses reflection api
+
+has set of rules for new method
+
+
+outer class not possible to declare as  private. 
+so compiler will raise an error
+
+
+used to get the understanding of class
+if we want to know
+behavior of class
+fields of class
+use it for testing
+
+
+USE:: Call a private method using reflection
+
+create an obj using class
+
+class c = Class.forName();
+Test t = (Test)c.newInstance();
+
+It allows an executing Java program to examine or "introspect" upon itself, 
+and manipulate internal properties of the program. 
+For example, it's possible for a Java class 
+to obtain the names of all its members and display them.
+
+class manipulator
+used to manipulate class and everything in like fields,methods,constructors
+private data,
+cant be used woth applet
+should be used very less
+
+compiler was designwed in such a way  to check all compilation errors by reading info abaout respective classes
+method,field,constructor info
+
+java api provides reflection api class 
+no of classes are available in reflection api
+
+
+java.lang.reflect package::pre-defined library
+
+
+java.lang.Class
+used to gather complete meta data of particular class
+
+java.lang.reflect.Field
+used to gather complete meta data of particular variable
+name,datatype,value of variable
+
+java.lang.reflect.Method
+used to gather complete meta data of particular method
+method name,access modifier,paranerer types
+
+
+java.lang.reflect.Constructor
+name,parameter types,access modifier
+
+
+java.lang.reflect.Modifier
+
+
+public class employee implements Serializable,Cloneable
+{
+public int eno;
+public static String  eno;
+public int eno;
+
+}
+
+
+
+ ---------------------------------------------------|
+|   Name : 		Employee							|
+|   SuperClass: anaged in form of another class obj:|---> Object class meta data 
+| 	Interface list: again a class array... ---------|---->  --------------||||||
+|													|        0 ---> class obj for serializable             |
+|																
+|					
+|
+|
+
+3 ways to prepare class object in java
+ using class.forName
+ 
+ forName is static method in CLass class 
+ fu
+ 
+1.
+Class c = Class.forName();
+
+2.
+Employee em = new Employee();
+
+Class c = e.getClass();
+
+ getClass available in object class
+ common and default superclass for every java class
+ for employee class also default superclass is object class
+ from this object class we are calling getClass method
+ 
+
+3.
+
+
+
+
+
+
+
+
+
+
+
+
+

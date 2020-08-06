@@ -1,0 +1,45 @@
+
+
+business component development
+
+ejb heavy weight components
+
+spring ioc
+
+as user we are reuqired to devlop business component
+the process of providing objects will be done by spring
+class object creation can be dobe by spring framework
+
+class Demo
+{
+int a,b;
+p v funcA(){
+sop("insid funcA of class Demo");
+}
+}
+
+class 1 has to ask spring for object of class (say demo)
+class 2 has to ask spring for object of class (say demo)
+
+giving an oject to application is knwn as ioc or di
+internally spring will make it as singleton
+
+spring will create singleton class like
+
+public class Demo{
+private static Demo d;
+private Demo(){}
+public static Demo getInstance(){
+Demo d = new Demo();
+return d;
+}
+}
+
+Creation of object
+
+Demo d1 = Demo.getInstance();
+sop(d1)
+Demo d2 = Demo.getInstance();
+sop(d2) 
+
+

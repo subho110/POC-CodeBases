@@ -1,0 +1,17 @@
+Elastic Search Notes
+
+Elasticsearch is an open source, document-based search platform 
+with fast searching capabilities. 
+In other words, it’s optimized for needle-in-haystack problems
+ rather than consistency or atomicity. 
+ 
+
+Elasticsearch runs on a clustered environment. 
+A cluster can be one or more servers.
+ Each server in the cluster is a node. 
+ As with all document databases, records are called documents.
+ I’ll often refer to them as records because I’m stuck in my ways.
+ Documents are stored in indexes, 
+ which can be sharded, or split into smaller pieces.
+ Elasticsearch can run those shards on separate nodes
+ to distribute the load across servers. 

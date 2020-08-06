@@ -1,0 +1,212 @@
+---------
+sorting
+---------
+b=best,a=average,w=worst
+
+------------------
+in place sorting
+------------------
+sorting algo which does not require any extra space for sorting
+
+------------------
+stable sorting
+------------------
+if sorting algo does not change the sequence of similar content in which they appear
+insertion sorting
+
+---------
+unstable
+---------
+if sorting algo after sorting the content change the sequence of similar content in which they appear
+quick sorting
+
+
+table a
+
+
+
+table a   sort by age
+
+
+
+table a sort by name
+
+
+------------------
+increasing order
+------------------
+if succesive is greatr than its previous element
+5 6 7 8 9
+
+------------------
+decreasing order
+------------------
+if succesive is less than its previous element
+ 9 8 7 6 5
+
+---------------------------
+non-increasing order
+---------------------------
+occurs when duplicat element present
+if succesive is less than or equal to its previous element
+9 8 6 3 3 1
+
+---------------------------
+non-decreasing order
+---------------------------
+occurs when duplicat element present
+if succesive is greater than or equal to its previous element
+ 
+ ------------------
+bubble sort
+------------------
+also called sinking sort
+compares each pair of adjacent items and swap them if they are in wrong order 
+time complexity
+b,a,w=n,n*n,n*n
+space complexity
+o(1) as we are not using any extra space
+
+scenrio required
+1.when input is already sorted
+
+------------------
+selection sort
+------------------
+idea of finding minimum and maximum element in unsorted  array
+
+search min element in list
+swap with value at location
+
+time complexity
+b,a,w=n*n,n*n,n*n
+space complexity
+o(1) as we are not using any extra space
+
+scenrio required
+1. when no additional memory is there
+2. when simple/easy implementation is there
+
+When not to use
+when time complexity is concern
+
+
+------------------
+insertion sort
+------------------
+a sublist is always maintained which is always sorted
+(n-1) pass are required to sort n elements
+take given array and divide into 2 parts::sorted and unsorted
+then we select the first element from unsorted array and find its correct position in sorted array
+repeat till unsorted array is not empty
+
+time complexity
+b,a,w=n*n,n*n,n*n
+space complexity
+o(1) as we are not using any extra space
+
+scenrio required
+1. when no additional memory is there
+2. when simple/easy implementation is there
+3. when we have continouos inflow of nos and we want to keep the list sorted
+(main reason)
+
+When not to use
+when avg case is bad
+when there is large data set
+
+
+------------------
+heap sort
+------------------
+
+
+
+------------------
+bucket sort
+------------------
+create no 0f buckets:: ceil/floor(sq root of total no of element)
+appropiate bucket for an element:: ceil((value of element * no of buckets)/max value of array)
+iterate through each element and place in appropiate bucket
+after that sort all bucket using any algorithm
+merge  all the bucket
+ 
+time complexity
+b,a,w=o(n)+o(log n)= o (n log n),n*n,n*n
+space complexity
+o(1) as we are not using any extra space
+
+scenrio required
+1. when input is uniformly distributed over a range....range should not be very complexity
+0-100 is ok, 
+
+When not to use
+when space is concern
+ 
+------------------
+heap sort
+------------------
+spevial binary tree datastructure where root node is compared with its choildren and arranged accordingly
+uses heap biary tree
+
+
+max heap
+parent node is greater than or equal to child node
+
+min heap
+value of root node is less than or equal to either of its children
+
+typically we use min heap
+
+time complexity
+b,a,w=o(n)+o(log n)= o (n log n),n*n,n*n
+space complexity
+o(1) as we are not using any extra space
+
+scenrio required
+1.when space is concern 
+
+When not to use
+when We need our sort to be stable
+
+constrcution of max heap:::
+cretae new node in heap
+assign value to new node
+if parent is less than child then swap them
+repeat steps 3 n 4 until heap property holds
+
+best suited with array...does not work with linkdlist
+
+
+quick sort
+
+based on partitioning of array of data into smaller array
+uses the concept of divide and conquer
+finds an element called pivot
+pivot has left and right
+efficient for large six data sets
+
+average  and worst case scenrio = o (n log n)
+
+recursive steps
+1.find pivot that divides array in two halves
+2. quick sort  left half
+3. quick sort right half
+
+-----------
+merge sort 
+-----------
+create 2 temp array...L and R
+dividenand conquer algo
+keep on breaking into 2 halves until they become too small to be broken further
+time complexity=  o (n log n)
+space complexity = o(n)
+
+when to use
+when stable sort is needed
+when avg time is o(n log n)
+
+when not to use
+when space is concern like embedded systems
+javA 6 uses merge sort as sorting algo
+java 7 n 8 usesv some other technique

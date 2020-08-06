@@ -1,0 +1,12 @@
+checked exception
+
+exceptions which are checked by compiler for smooth execution during runtime
+otherwise compile time exception will come during runtime
+so for that they need to check that using throws or try/catch
+exception followed by throws are all examples
+fileNotFound,SQLException,
+
+Exceptions which are not checked by compiler whether programmer 
+is handling or not
+such exceptions are called unchecked exception
+arithmeticException,

@@ -1,0 +1,227 @@
+
+kumararun5593@gmail.com
+King@123  
+abhishek.prasad870@gmail.com
+Just4@udemy 
+
+For lombok
+https://projectlombok.org/features/Data
+
+---------
+
+
+
+coding simplified----
+
+--------------
+Major Topics
+--------------
+
+IOC
+
+Design Patterns:creation,singleton,abstract,factory,
+
+
+String Concepts
+
+	String Pool
+	https://www.journaldev.com/797/what-is-java-string-pool
+
+oops
+
+is a relationship------------done
+
+has a relationship------------done
+
+overloading------------done
+
+overriding
+
+exception 
+
+FileIO
+	https://www.geeksforgeeks.org/file-handling-java-using-filewriter-filereader/
+
+serialization deserialization externalization internationalization------------done
+
+multithreading-- interthread communication, deadlocks, starvation, concurrency,executor,threadpool,
+
+collection
+
+	Q real life implemetation of list set map
+	https://stackoverflow.com/questions/38987520/real-life-example-of-list-tuple-set-and-map
+	https://www.quora.com/In-Java-how-will-you-decide-when-to-use-a-List-Set-or-a-Map-collection
+
+map
+
+concurrent collection
+
+internal working of hashmap and hashset------------done
+
+Q comparable and comparator
+	https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
+
+synchronised collection------done
+generics
+inner classes------------done
+design pattern
+jvm architecture
+java memory management -java 8
+java 8 - predicate streams function functional interface lambda
+garbage collectors
+garbage collector in java memory management::::https://javapapers.com/java/how-java-garbage-collection-works/
+https://www.hackerearth.com/practice/notes/how-garbage-collection-works-in-java/
+string - immutability
+String buffer and builder------------done
+how to create immutable classes
+hashcode and equals methods---------progress
+datastructure
+link list, stack, dll, queue,binary tree
+singleton and prototype
+
+
+https://beginnersbook.com/2013/03/constructors-in-java/
+
+why need getters and setters??
+https://dzone.com/articles/why-should-i-write-getters-and-setters
+
+
+
+iland of isolation
+class level lock object level lock 
+class loader
+abstract class and interface
+how you transport object over network....serialization
+soap and rest diff
+DI,IOC
+singleton and prototype
+design a web service
+mvc architecture
+	
+jajodia.aman94@gmail.com
+
+
+random questions
+ways of creating thread pool
+
+------------
+cognizant:::
+------------
+FI,Lambda
+PSOT
+:::Idempotency:::Journey to Idempotency and Temporal Decoupling(For spring)::https://dzone.com/articles/journey-idempotency-and
+https://restfulapi.net/idempotent-rest-apis/
+diff btw GET and POST
+
+------------
+cognizant:::
+------------
+comparable and comparable
+singleton design pattern
+
+
+
+-------------------
+project interview
+-------------------
+
+iland of isolation
+class level lock object level lock 
+clalss loader
+abstract class and interface
+how you transport object over network....serialization
+
+Q soap and rest diff
+	
+	security: whuich isbetter
+	https://www.softwaretestinghelp.com/soap-vs-rest-difference/
+
+DI
+design a web service
+mvc architecture
+
+constructor
+https://beginnersbook.com/2013/03/constructors-in-java/
+
+5-7 years
+https://www.java67.com/2013/07/15-advanced-core-java-interview-questions-answers-senior-experienced-5-6-years-programmers-developers.html
+
+
+
+1.Thread Concurrency
+2.How can you create Immutable Object/Immutable Class
+3.Rule for making object/class immutable
+4.Executor (Thread)
+5.How to apply singleton pattern in Multthreading
+6.Lakhs of data needs to be retrieved from file,
+              How multithreading should be done,also keeping in mind 
+              performance issues
+7. Default bean of spring
+8. Comparator and comparable(with code)
+9. Singleton design
+10. Array of nos.(sort according to best way)
+11. Why array index starts with zero
+12. Serializable/Deserializable
+13. Can a singleton object be accessed by two equally important priority 
+                             thread (without cloning)  Ans::can use enum 
+14. How json info gets converted to java info
+15. Two threads working simultaneously on block of code..how to handle the issue
+16. Prog: 2D array with 1's and 2's . Count the row with max no of 1's
+17. Connection pooling, JDBC Connection
+18. What happens when primary key gets created.(Role of primary key)
+19. In DB, crores of data are there . How to retrieve.(Indexing)
+20. [5X5] Matrix find occurence of particular string horizontally vertically diagonally
+
+
+Q diff btw soap ans rest in temrs of secrity and performance
+--https://www.softwaretestinghelp.com/soap-vs-rest-difference/
+
+challenges faced in java project
+	https://www.pixelstech.net/article/1432130727-Java-Development-%3A-Overcomes-Challenges-of-Security-Flexibility-and-Performance
+	https://dzone.com/articles/three-common-application
+	https://www.quora.com/What-are-some-of-the-most-common-challenges-faced-by-Java-developers
+
+Q can spring have beans with same name
+	with qualifier annotaTION
+
+Q how i can make a collection with an type of parameter...
+
+Q diff between error and exception
+--https://techdifferences.com/difference-between-error-and-exception.html
+
+Q diff btw concurrent and synchronised collection
+	https://javarevisited.blogspot.com/2016/05/what-is-difference-between-synchronized.html
+
+how do you sort collections::: 
+	collections.sort();
+	comparator and comparable
+	
+how do run a job in spring 
+	@Scheduled
+	@EnabledScheduling
+
+what are the annotations you have used in your program
+
+
+
+
+Banker’s algorithm (Which is in-turn a gift from Dijkstra) in order to avoid deadlock.
+		
+Q when to use use abstract class / interface
+-->https://dzone.com/articles/when-to-use-abstract-class-and-intreface
+
+Q How deadlock arises
+	https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
+
+Q what and how to prevent deadlocks
+-->https://dzone.com/articles/how-to-avoid-deadlock-in-java-threads-1
+
+Q when and where to use interface
+	full abstraction
+	The reason is, abstract classes may contain non-final variables, whereas variables in interface are final, public and static.
+	https://dzone.com/articles/when-to-use-abstract-class-and-intreface
+
+Q when and where to use abstract class
+
+
+Q 

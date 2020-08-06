@@ -1,0 +1,30 @@
+data hiding 
+
+
+
+abstraction 
+
+hide internal implementation
+show only functionality
+provides security------main adv
+enhance if internal change will become easy
+becomes easy for end user to use the ervices
+maintenanace of internal services will become easy
+
+
+Encapsulation
+process of binding data members + corresponding methods into a single unit
+combination of data hiding + abstraction 
+prov security------main adv
+enhance if internal change will become easy
+becomes easy for end user to use the ervices
+maintenanace of internal services will become easy
+disadv
+slows down execution
+increases length of code
+
+tightly encapsulated class::
+a class in which  in which each n evry variable is private
+whethr class contains corresponding getter/setter methods and
+whether these methods are declared public or not we r not requires to check
+if parent class is not tightly encapsulated then child classes by default will not be tightly coupled

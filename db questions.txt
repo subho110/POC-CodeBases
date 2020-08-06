@@ -1,0 +1,102 @@
+db questions
+
+Q
+when will the findbyprimarykey method not be implemented
+in container managed 
+
+https://www.oreilly.com/library/view/enterprise-javabeans-third/0596002262/ch04s02.html
+
+Q
+which design pattern encapsulates an algorithm inside a class
+ans:: strategy
+
+https://blog.bitsrc.io/keep-it-simple-with-the-strategy-design-pattern-c36a14c985e9
+
+ design pattern that encapsulates a "family" of algorithms 
+ and selects one from the pool for use during runtime. 
+ The algorithms are interchangeable, 
+ meaning that they are substitutable for each other.
+
+
+Q
+jshell
+
+|  The jshell tool allows you to execute Java code, getting immediate results.
+|  You can enter a Java definition (variable, method, class, etc), like:  int x = 8
+|  or a Java expression, like:  x + x
+|  or a Java statement or import.
+|  These little chunks of Java code are called 'snippets'.
+|
+|  There are also the jshell tool commands that allow you to understand and
+|  control what you are doing
+
+Q
+a REPL allows to interactively run arbitrary snippets of code and evaluate their results.
+seful for things such as quickly checking the viability of an idea or figuring out e.g. a formatted string for String or SimpleDateFormat.
+
+Q
+valid reason behind a stateful session bean instead of stateless session bean
+ans:
+
+Q
+object representing another object that provides surrogate for another object to control
+ans: proxy pattern
+
+Q									abstraction				concrete classes	
+factory design pattern depends upon ------------ and not on ----------------
+
+
+ 
+ 
+Q
+hql does not support which operation create or insert or select mcq
+ans create
+
+Q
+which hibernate object is synchronized in db at end of transaction
+transient/persistent/detached/none
+
+ans: persistent
+https://laliluna.com/jpa-hibernate-guide/ch02.html
+
+Q
+which designer pattern address how you can decouple sender and receiver but with different trade
+s
+
+Chain of responsibility
+commands
+oberver
+all------------correct
+
+Chain of responsibility, Command, Mediator, and Observer, 
+address how you can decouple senders and receivers, 
+but with different trade-offs. 
+Chain of responsibility passes a sender request 
+along a chain of potential receivers.
+
+
+
+Q cursor
+	https://www.geeksforgeeks.org/what-is-cursor-in-sql/
+
+
+Q trigger 
+	https://www.geeksforgeeks.org/what-is-stored-procedures-in-sql/
+
+
+Q diff btw trigger and procedure
+	https://www.geeksforgeeks.org/difference-between-trigger-and-procedure-in-dbms/?ref=leftbar-rightbar
+
+Q diff btw cursor and trigger
+	https://www.geeksforgeeks.org/difference-between-cursor-and-trigger-in-dbms/?ref=rp
+
+
+Q diff btw delete and truncate
+	
+
+Q diff btw grpby and order by
+	https://www.geeksforgeeks.org/difference-between-order-by-and-group-by-clause-in-sql/?ref=leftbar-rightbar
+	
+Q diff btw super key and primary key
+
+

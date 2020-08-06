@@ -1,0 +1,38 @@
+
+
+Q can we skip finally block
+
+A: The finally block follows a try block or a catch block. 
+
+A finally block of code always executes, 
+irrespective of occurrence of an Exception.
+
+ You cannot skip the execution of the final block. 
+ 
+ Still if you want to do it forcefully when an exception occurred, 
+ the only way is to call the System.exit(0) method,
+ at the end of the catch block which is just before the finally block.
+
+In short words, finally block is not executed 
+if JVM is stopped while thread is inside a corresponding try block,
+ or if thread is killed using some low-level mechanisms (not Thread.stop()).
+
+In addition to obvious examples with System.exit(), 
+even a normal JVM shutdown can be unexpected for daemon threads:
+
+public class FinallyExample {
+   public static void main(String args[]) {
+      int a[] = {21, 32, 65, 78};
+      try {
+         System.out.println("Access element three :" + a[5]);
+      } catch (ArrayIndexOutOfBoundsException e) {
+         System.out.println("Exception thrown :" + e);
+         System.exit(0);
+      } finally {
+         a[0] = 6;
+         System.out.println("First element value: " + a[0]);
+         System.out.println("The finally statement is executed");
+      }
+   }
+}
+----------------------------------------------------

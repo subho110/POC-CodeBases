@@ -1,0 +1,1563 @@
+https://alternativeto.net/category/developer-tools/
+
+For lombok
+
+https://projectlombok.org/features/Data
+
+ 
+
+coding simplified----
+
+ 
+
+--------------
+
+Major Topics
+
+--------------
+
+ 
+
+IOC
+
+ 
+
+Design Patterns:creation,singleton,abstract,factory,
+
+ 
+
+ 
+-----------------
+String Concepts
+-----------------
+
+ 
+
+              String Pool        
+
+              https://www.journaldev.com/797/what-is-java-string-pool
+			  
+Q intern method()
+
+
+Q How does the substring() method inside String works?
+
+ 
+------
+oops
+------
+
+inner classes------------done
+ 
+
+is a relationship------------done
+
+ 
+
+has a relationship------------done
+
+ 
+
+overloading------------done
+216 d part 1
+
+diff btw overriding abd overloading------------done
+		216 d part 1
+
+
+ 
+
+overriding
+
+ 
+
+exception
+
+ 
+
+FileIO
+
+              https://www.geeksforgeeks.org/file-handling-java-using-filewriter-filereader/
+
+ 
+
+serialization deserialization externalization internationalization------------done
+
+	geeksforgeeks.org/serialization-in-java/
+
+multithreading-- interthread communication, deadlocks, starvation, concurrency,executor,threadpool,
+
+ 
+-------------
+collection
+-------------
+
+	https://www.protechtraining.com/content/java_fundamentals_tutorial-generics_collections
+ 
+
+              Q real life implemetation of list set map
+
+              https://stackoverflow.com/questions/38987520/real-life-example-of-list-tuple-set-and-map
+
+              https://www.quora.com/In-Java-how-will-you-decide-when-to-use-a-List-Set-or-a-Map-collection
+
+diff btw hashset,linkedhashset,treeset
+	https://javaconceptoftheday.com/hashset-vs-linkedhashset-vs-treeset-in-java/
+	
+diff btw hashmap,linkedhashmap,treemap
+	
+
+<imp>
+
+Diff between HashMap and HashTable 
+ 
+ <imp>
+
+Diff between TreeSet and HashSet
+
+ 
+
+map
+
+ 
+
+concurrent collection
+
+ 
+
+internal working of hashmap and hashset------------done
+
+ 
+
+Q comparable and comparator
+
+              https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
+
+ 
+
+synchronised collection------done
+
+generics
+
+
+
+
+---------------
+design pattern
+---------------
+Can you write a critical section code for the singleton?  
+or
+Make thread safe singleton in java
+https://javarevisited.blogspot.com/2014/05/double-checked-locking-on-singleton-in-java.html
+
+
+
+
+
+jvm architecture
+
+java memory management -java 8
+
+java 8 - predicate streams function functional interface lambda
+
+garbage collectors
+
+garbage collector in java memory management::::https://javapapers.com/java/how-java-garbage-collection-works/
+
+https://www.hackerearth.com/practice/notes/how-garbage-collection-works-in-java/
+
+string - immutability
+
+String buffer and builder------------done
+
+how to create immutable classes
+
+hashcode and equals methods---------progress
+
+datastructure
+
+link list, stack, dll, queue,binary tree
+
+singleton and prototype
+
+ 
+
+ importance of json
+	https://ezeelive.com/json-advantages-disadvantages/
+	https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
+
+https://beginnersbook.com/2013/03/constructors-in-java/
+
+ 
+
+why need getters and setters??
+
+https://dzone.com/articles/why-should-i-write-getters-and-setters
+
+----------
+Hibernate
+----------
+Q working implemetation
+	https://www.geeksforgeeks.org/hibernate-architecture/
+
+Q hibernate 1st level and 2nd level cache <imp>
+
+
+Q How do we integrate Hibernate with Spring
+
+
+
+
+Q What does hibernate cfg & hbm files container
+
+
+
+
+Q Annotations in Spring and Hibernate
+
+
+24. Explain about Hibernate and configurations
+
+ 
+
+25. Difference b/w Hibernate and JDBC.
+	https://www.geeksforgeeks.org/introduction-to-hibernate-framework/
+ 
+
+26. Explain about persist, remove, get, load merge and update methods in Hibernate?
+
+
+2. Hibernate Transaction Management in hibernate?
+
+ 
+
+3. Object States in Hibernate ?
+http://javawebtutor.com/articles/hibernate/hibernate-object-states.php
+
+ 
+
+4. Hibernate Save and Persist
+
+ 
+
+5. Hibernate Mappings?
+
+----------------------------------------------------	
+
+ 
+
+iland of isolation
+
+class level lock object level lock
+
+class loader
+
+abstract class and interface
+
+how you transport object over network....serialization
+
+soap and rest diff
+
+DI,IOC
+
+singleton and prototype
+
+design a web service
+
+mvc architecture
+
+             
+
+jajodia.aman94@gmail.com
+
+ 
+
+ 
+
+random questions
+
+ways of creating thread pool
+
+ 
+REST ful WebServices
+
+https://restfulapi.net/security-essentials/
+
+
+
+
+
+------------
+
+cognizant:::
+
+------------
+
+FI,Lambda
+
+PSOT
+
+
+https://restfulapi.net/idempotent-rest-apis/
+
+diff btw GET and POST
+
+ 
+
+------------
+
+cognizant:::
+
+------------
+
+comparable and comparable
+
+singleton design pattern
+
+ 
+
+ 
+
+ 
+
+-------------------
+
+project interview
+
+-------------------
+
+ 
+
+iland of isolation
+
+class level lock object level lock
+
+clalss loader
+
+abstract class and interface
+
+how you transport object over network....serialization
+
+ 
+---------------------
+ soap and rest 
+---------------------
+
+             soap and rest diff
+			 
+
+              security: whuich isbetter
+
+              https://www.softwaretestinghelp.com/soap-vs-rest-difference/
+			  
+			  How do you secure a Rest URI ?
+			  https://dzone.com/articles/top-5-rest-api-security-guidelines
+			  
+			  
+			  
+
+ 
+
+DI
+
+design a web service
+
+mvc architecture
+
+ 
+
+constructor
+
+https://beginnersbook.com/2013/03/constructors-in-java/
+
+ 
+
+5-7 years
+
+https://www.java67.com/2013/07/15-advanced-core-java-interview-questions-answers-senior-experienced-5-6-years-programmers-developers.html
+
+ 
+
+ 
+
+ 
+
+1.Thread Concurrency
+
+2.How can you create Immutable Object/Immutable Class
+
+3.Rule for making object/class immutable
+
+4.Executor (Thread)
+
+5.How to apply singleton pattern in Multthreading
+
+6.Lakhs of data needs to be retrieved from file,
+
+              How multithreading should be done,also keeping in mind
+
+              performance issues
+
+
+8. Comparator and comparable(with code)
+
+9. Singleton design
+
+10. Array of nos.(sort according to best way)
+
+11. Why array index starts with zero
+
+12. Serializable/Deserializable
+
+13. Can a singleton object be accessed by two equally important priority
+
+                             thread (without cloning)  Ans::can use enum
+
+14. How json info gets converted to java info
+
+15. Two threads working simultaneously on block of code..how to handle the issue
+
+16. Prog: 2D array with 1's and 2's . Count the row with max no of 1's
+
+17. Connection pooling, JDBC Connection
+
+18. What happens when primary key gets created.(Role of primary key)
+
+19. In DB, crores of data are there . How to retrieve.(Indexing)
+
+20. [5X5] Matrix find occurence of particular string horizontally vertically diagonally
+
+
+reflection
+
+	https://medium.com/the-telegraph-engineering/mirror-gazing-a-closer-look-at-the-good-and-bad-sides-of-java-reflection-884f65a4ef20
+	https://ncrcoe.gitbooks.io/java-for-small-teams/content/specifics/1000_do_not_use_reflection.html
+	https://dzone.com/articles/java-reflection-but-faster?fromrel=true
+
+ 
+------------------------------
+Q Oauth:::why what where when  
+-----------------------------
+	https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth
+
+Q diff btw soap ans rest in temrs of secrity and performance
+
+--https://www.softwaretestinghelp.com/soap-vs-rest-difference/
+
+ 
+
+challenges faced in java project
+
+              https://www.pixelstech.net/article/1432130727-Java-Development-%3A-Overcomes-Challenges-of-Security-Flexibility-and-Performance
+
+              https://dzone.com/articles/three-common-application
+
+              https://www.quora.com/What-are-some-of-the-most-common-challenges-faced-by-Java-developers
+
+ 
+
+
+ 
+
+Q how i can make a collection with an type of parameter...
+
+ 
+
+Q diff between error and exception
+
+--https://techdifferences.com/difference-between-error-and-exception.html
+
+ 
+
+Q diff btw concurrent and synchronised collection
+
+              https://javarevisited.blogspot.com/2016/05/what-is-difference-between-synchronized.html
+
+ 
+
+how do you sort collections:::
+
+              collections.sort();
+
+              comparator and comparable
+
+             
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+Banker’s algorithm (Which is in-turn a gift from Dijkstra) in order to avoid deadlock.
+
+                            
+
+Q when to use use abstract class / interface
+
+-->https://dzone.com/articles/when-to-use-abstract-class-and-intreface
+
+ 
+
+Q How deadlock arises
+
+              https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
+
+ 
+
+Q what and how to prevent deadlocks
+
+-->https://dzone.com/articles/how-to-avoid-deadlock-in-java-threads-1
+
+ 
+
+Q when and where to use interface
+
+              full abstraction
+
+              The reason is, abstract classes may contain non-final variables, whereas variables in interface are final, public and static.
+
+              https://dzone.com/articles/when-to-use-abstract-class-and-intreface
+
+ 
+
+Q when and where to use abstract class
+
+ 
+
+ 
+
+Q cursor
+
+              https://www.geeksforgeeks.org/what-is-cursor-in-sql/
+
+ 
+
+ 
+
+Q trigger
+
+              https://www.geeksforgeeks.org/what-is-stored-procedures-in-sql/
+
+ 
+
+ 
+
+Q diff btw trigger and procedure
+
+              https://www.geeksforgeeks.org/difference-between-trigger-and-procedure-in-dbms/?ref=leftbar-rightbar
+
+ 
+
+Q diff btw cursor and trigger
+
+              https://www.geeksforgeeks.org/difference-between-cursor-and-trigger-in-dbms/?ref=rp
+
+ 
+
+ 
+
+Q diff btw delete and truncate
+
+             
+
+ 
+
+Q diff btw grpby and order by
+
+              https://www.geeksforgeeks.org/difference-between-order-by-and-group-by-clause-in-sql/?ref=leftbar-rightbar
+
+             
+
+Q diff btw super key and primary key
+
+ 
+
+basic building blocks of angular
+
+directives in angular
+
+diff btw angular and angular js
+
+how angular better than angularjs
+
+diff between scope and rootscope
+
+can scope be accesed outside class. if yes how if no how to
+
+how many foems can spring be created
+
+what is string constant pool
+
+singleton class in java
+
+diff btw linkedlist and arraylist
+
+how is data stored in hashtable / working implementation
+
+string question : two strings saved as abc. how they get sored in pool
+
+ 
+
+ 
+
+What is difference between Angular js and Angular? ​
+
+ 
+
+What is angular life cycle hooks? ​
+
+ 
+
+Could you explain services in Angular? ​
+
+ 
+
+What is the use of interface in Angular? ​
+
+ 
+
+What is the difference between Annotation and Decoration in Angular? ​
+
+ 
+
+What are the building blocks (component, Data Binding, DI, Directives, Metadata, Modules, Routing, Services, and Template etc) of Angular? ​
+
+ 
+
+What is AOT compilation? ​
+
+ 
+
+What is JIT compilation? ​
+
+ 
+
+What is i18? ​
+
+ 
+
+What is View Encapsulation?​
+
+ 
+
+How many ways of view encapsulation in Angular? ​
+
+ 
+
+What is RxJS? ​
+
+ 
+
+What is NGRX? ​
+
+ 
+
+What is TypeScript ? ​
+
+ 
+
+What is module? ​
+
+ 
+
+What is directive? ​
+
+ 
+
+What is a template? ​
+
+ 
+
+What is Data binding? ​
+
+ 
+
+How we can achieve one way data binding in angular? ​
+
+ 
+
+Should be use jquery in Angular? ​
+
+ 
+
+What is the use of @Input and @Output in Angular?​
+
+ 
+
+What is Meta data?​
+
+ 
+
+What is Angular CLI?​
+
+ 
+
+What is Workspace?​
+
+ 
+
+What is Service? ​
+
+ 
+
+What is dependency injection in angular?​
+
+ 
+
+What is the use of async pipe?​
+
+ 
+
+What is interpolation?​
+
+ 
+
+What is Bootstrapping?​
+
+ 
+
+What is change detection strategy?​
+
+ 
+
+What is lazy loading? How we can implement it.​
+
+ 
+
+How we can improve performance of angular application.​
+
+ 
+
+What is an observable?​
+
+ 
+
+How you can perform common error handing in angular?​
+
+ 
+
+What http interceptor. Give an example where it can use.​
+
+ 
+
+What is resolver? Give a scenario where it can use.​
+
+ 
+
+How we can create library in angular.​
+
+ 
+
+What is new in angular 9.​
+
+ 
+
+What are the DOM and the BOM?​
+
+ 
+
+​What are different types of filter in angular?​
+
+ 
+
+What is the use of $destroy?​
+
+ 
+
+What is Ivy?​
+
+ 
+
+What are advantage (smaller bundle size, Faster Testing, Improved build error, improved internationalization, improved build time, improve css class and styling binding, enable AOT by default) of Ivy compiler & run time in angular 9?​
+
+ 
+
+If a page load time is high , what would be the approach to optimize it?​
+
+ 
+
+How we can create a reusable components to use in multiple projects in a workspace?​
+
+ 
+
+What is the optimal way to send some information as a part of header for all http request?​
+
+ 
+
+-------------
+
+Angular JS
+
+-------------
+
+ 
+
+What is Angular JS?​
+
+ 
+
+What are the key features (services, filters, directives, scope, controller etc) of angular js?​
+
+ 
+
+What data binding or two-way data binding?​
+
+ 
+
+What is digest cycle?​
+
+ 
+
+What are performance improvement techniques in angular js?​
+
+ 
+
+How would you specify that a scope variable should have one-time binding only?​
+
+ 
+
+What is SPA?​
+
+ 
+
+What is route provider?​
+
+ 
+
+What is deep copy?​
+
+ 
+
+​What is shallow copy?​
+
+ 
+
+What is difference between prefix $ and $$?​
+
+ 
+
+Where should we implement the DOM manipulation in AngularJS?​
+
+ 
+
+How to make a function return promise in angular js?​
+
+ 
+
+How many types of Data binding is there in angular js?​
+
+ 
+
+What is the difference between ng-bind & ng-model directive?​
+
+ 
+
+What is difference between ng-if & ng-hide?​
+
+ 
+
+What is difference between ngRoute & ui-router?​
+
+ 
+
+What is the difference between factory & services?​
+
+ 
+
+How does interpolation, e.g. “{{ someModel }}”, works?​
+
+ 
+
+What is dependency injection? ​
+
+ 
+
+How can digest cycle time be decreased?​
+
+ 
+
+What is promise?​
+
+ 
+
+How we can execute some logic after getting response of asynchronous two or more api call.​
+
+ 
+
+Sample Interview questions 
+
+ 
+
+how is an entity manager configured (JPA) 
+
+ 
+
+java 8 features
+
+ 
+
+What are the new features added in Java 7 and Java 8
+
+ 
+
+lamda functions and why we use? <imp>
+
+ 
+
+functional interface
+
+ 
+
+relation between functional interface and lamda
+
+ 
+
+jdbc steps to connect to a data base
+
+ 
+
+difference between hashmap and concurrent hashmap
+
+ 
+
+internal implementation of hashmap
+
+ 
+
+how to consume rest services.
+
+ 
+
+how to change the namespace 
+
+ 
+
+if we want to change the http respose status code how to do that <imp>
+
+ 
+
+
+ 
+
+name few collections which are thread safe
+
+ 
+
+What is the significance of hashCode and equals method? <imp>
+
+ 
+
+Employee e1 -> object with name “Manoj” 
+
+ 
+
+Employee e2 -> object with name “Manoj” 
+
+ 
+
+e1.equals(e2) -> what this will return. how is memory allocation happens for these two?<imp>
+
+ 
+ 
+
+Code snippet : Java8 thread features : executor service java code example 
+
+ 
+ <imp>
+Code snippet : Strems example to filter out employees who has salary more than 10k
+
+ 
+<imp>
+Code snippet: an example of using comparable interface to sort employees based on age 
+
+ 
+ 
+
+Insert data to Employee table using spring transaction 
+
+ 
+
+In profile based configuration environment (Ex : Cloud Config in spring boot), how will you achieve reloading of property value if is changed, without affecting runtime environment <imp>
+
+ 
+
+Java API : how you expose and Employee entity CRUD operations as API, using REST or SOAP<imp>
+
+ 
+
+Comparable interface and return type of compare to
+
+ 
+
+write a program to perform aggregation split into 5 operations using thread async with java8 (Executor and callable).. This is from import statements, how to get object of executor, how will you invoke executor service and fetch result? Also benefits of this..
+
+ 
+
+program to transform char list to uppercase and print using stream
+
+ 
+
+why are streams used
+
+ 
+
+ 
+
+simple project to perform curd operation on employee entity, annotations for controller, how will handle exception for the project, what http error codes
+
+Tell how Streams work internally?
+
+ 
+
+Difference between Sequential and parallel streams
+
+ 
+
+
+ 
+
+Write the Singleton class code
+
+ 
+
+
+ 
+--------------
+Spring12
+--------------
+diff between spring--spring mvc--spring boot
+	https://www.quora.com/What-is-the-difference-between-Spring-Boot-and-the-Spring-framework(Gnana Jeyam : Ans)
+or
+diff btw spring mvc--spring boot
+	https://www.quora.com/What-is-the-difference-between-Spring-Boot-and-the-Spring-framework
+
+	
+-> How to configure/implement Spring security ?
+
+ How to create WAR file in Spring boot ? 
+-> Difference between application.properties and application.yml file ? which one you will prefer.
+-> What type of dependency injection you prefer and why?
+-> Difference between dependecy injection and IOC ?
+28. Explain about Spring MVC, Spring boot.
+29. What are spring modules you used in current project. Explain with example.
+30. What is Dispatcher servlet in spring MVC and How spring MVC works.
+
+
+diff btw spring mvc--spring boot
+	https://www.quora.com/What-is-the-difference-between-Spring-Boot-and-the-Spring-framework
+
+
+<imp>
+Achieving Dependency Injection in java without using springs 
+
+
+reloading without spring cloud how?
+Q can spring have beans with same name
+
+              with qualifier annotaTION
+
+
+simple jdbc connection and how will you get jdbc connection with spring
+modules of spring you worked on
+Difference between @Component and @Service in spring. <imp>
+will service work of we annotate with component instead of service
+how will you enable transaction with annotations
+how is dependency injection achieved
+how will you externalize property file values
+
+
+
+
+7. Default bean of spring
+	Singletons
+	https://www.tutorialspoint.com/spring/spring_bean_scopes.htm
+
+how do run a job in spring
+
+              @Scheduled
+
+              @EnabledScheduling
+
+ Explain Spring MVC architecture
+
+
+what are the annotations you have used in your program
+	
+	
+What is Spring IOC container & DI
+
+:::Idempotency:::Journey to Idempotency and Temporal Decoupling(For spring)::https://dzone.com/articles/journey-idempotency-and
+
+ 
+
+Spring Bean life cycle & How do we mention bean scope , explain a scenario where you used in your project
+
+
+spring annotations 
+
+diff btw 
+ 
+
+Spring transaction management related questions
+ 
+
+spring security related questions
+
+ 
+How to dynamically configure different environments (TST, DEV, PROD) etc in spring boot ?
+ 
+
+31. Explain Spring Bean life cycle
+32. Explain Spring IOC, Dependency injection.
+33. Explain Error handling in spring
+34. Annotations you used in spring boot application. Explain
+35. What @Autowired and how to resolve ambiguity during bean injection
+36. Explain about @configuration and @Bean
+1. How does @Transactional work then?
+6. Bean scopes
+7. @Bean annotaion in spring and how it is working?
+Difference between BeanFactory and ApplicationContext
+
+ 
+-----------------------------------------------------------------------------------------------------------------------------
+Explain Rest controller with example CRUD operations
+
+ 
+
+Explain HashMap internal implementation
+	Notes
+ 
+
+Which is the best Map to use in multi threaded environment and how ?( Concurrent HashMap)
+
+ 
+
+There are multiple passengers (bulk) travelling in flight. We need to send an email to all of them. Which approach do u follow ? (Multi threading - Executors and Callable interface) <imp>
+
+ 
+
+
+
+ 
+
+There are multiple microservices. We are processing a request which is in single transaction and process through all services. If something fails in in between micro service how do we come to know where it is failed and what is the issue ? at framework level
+
+ 
+
+How to implement Hashcode, how to implement Equals method and write a sudocode <imp>
+
+ 
+
+Questions related to Stream API usage and sudocode <imp>
+
+ 
+
+Explain the scenario where Linkedlist is used in the projects
+
+ 
+
+Explain the scenarios that best fit use of jpa vs jdbc
+
+ 
+
+
+ 
+
+Questions on comparable and comparator interfaces.
+
+ 
+
+
+ 
+
+
+how you will handle transactions on multiple databases
+
+ 
+
+how you will implement restful web service.
+
+ 
+
+second level cache configuration
+
+ 
+
+what is setter and constructor dependency injection
+
+ 
+
+what is @autowired. Explain it
+
+ 
+
+have u used Date ?in java 8
+
+ 
+
+what is hashmap, How it work, how u have implemented in  project. What will happen if we give duplicate key.
+
+ 
+
+
+ 
+
+Domain related and other:
+
+ 
+
+tell about yourself 
+
+ 
+
+previous project roles and responsibilities 
+
+ 
+
+Explain the previous project architeture
+
+ 
+
+main terminologies of airline reservation 
+
+ 
+
+what are attributes required for airline booking like flights, itinerary, price,..
+
+ 
+
+where will be 5 years down the lane
+
+ 
+
+What is a flight leg and flight segment ?
+
+ 
+
+what is a PNR ?
+
+ 
+
+Questions asked in Console project :
+
+ 
+
+-> Difference between Hashtable and ConcurrentHashMap
+
+ 
+
+-> If i want to do some operation once 3 threads completes their job and then start another two thread, how this can be done ?
+
+ 
+
+-> different between Abstract class and functional interface 
+
+ 
+
+-> Difference between Collection and Stream
+
+ 
+
+-> difference between self join and inner join
+
+ 
+
+-> what are the microservice design patterns you have used in your project ? Explain with examples 
+
+ 
+
+-> Why Docker and kubernetes(k8) are used ?
+
+ 
+
+-> 
+ 
+
+-> What is actuator ?
+
+ 
+
+-> What all domains/services implemented in AWS ?
+
+ 
+
+-> what all design patterns used in your last assignment?
+
+ 
+
+-> What do you mean by micro service? 
+
+ 
+
+-> How do you troubleshoot a request in a microservice architecture? 
+
+ 
+
+-> starategies to improve the performance of your application?
+
+ 
+
+
+ 
+
+
+ 
+
+->
+ 
+
+-> How to implement SSO ?
+
+ 
+
+ 
+
+-> difference between RESt and SOAP
+
+ 
+
+
+ 
+
+-> how does different properties files are choosen based on type of environment (TST, DEV, PROD) is chosen in CI/CD ?
+
+ 
+
+-> how will you provide security to your REST appliacation ?
+
+ 
+
+-> Difference between DML and DDL ? TRUNK and DELETE is DML or DDL 
+
+ 
+
+-> Disadvantages of micro service development?
+
+ 
+
+1. What are SOLID principles of java? explain with example for each.
+
+ 
+
+2. When we use volatile and transient keywords in java?
+
+ 
+
+3. Explain Thread Life cycle in Java.
+
+ 
+
+4. Explain about Synchronization and Thread lock.
+
+ 
+
+5. Explain about Dead lock with example and how to prevent?
+
+ 
+
+6. Difference between Sleep and Wait in Java Multithreading?
+
+ 
+
+7. Explain about Runnable and Callable in Java Multithreading?
+
+ 
+
+8. Explain internal working of Hash Map and method used(equals and hash code method).
+
+ 
+
+9. Difference b/w Hash map, Synchronized Hash Map and ConcurrentHashMap?
+
+ 
+
+10. Difference between comparable and comparator?
+
+ 
+
+11. Java 8 features with example.
+
+ 
+
+12. Difference b/w abstraction and interface(before and after java 8)
+
+ 
+
+13. Can we override static method that defined in interface(java8)?
+
+ 
+
+14. What is default method (in java 8 interface) and Rules to override.
+
+ 
+
+15. Explain about Lambda expression, streams with program example.
+
+ 
+
+16. What is marker interface?
+
+ 
+
+17. What is serialization?
+
+ 
+
+18. What is immutable in Java and How to create immutable object.
+
+ 
+
+19. Explain about JVM memory structure, Class loaders
+
+ 
+
+20. Difference b/w JVM, JRE and JDK.
+
+ 
+
+
+ 
+
+21. Explain about JDBC and configurations.
+
+ 
+
+22. JDBC batch operation
+
+ 
+
+23. Explain about DB connection pool.
+
+ 
+
+
+ 
+
+27. Explain about OneToMany and ManyToOne and ManyToMany relationships with example.
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+ 
+
+37. Framework you used for Quality check(SonarQube) and explain what code improvements you have done in your current project.
+
+ 
+
+38. Explain about Junit and annotations you used to write test cases.
+
+ 
+
+39. What is Singleton pattern and how to achieve in Java.
+
+ 
+
+40. Explain Factory Pattern, Proxy pattern and other patterns you know with example.
+
+ 
+
+41. Explain about Micro service concepts and tools you used in current projects.
+
+ 
+
+42.Deadlock prevention?
+
+ 
+
+43.Dependency Injection with annotations? How you are configuring in your project?
+
+ 
+
+44.SOAP and REST web services uses?
+
+ 
+
+45.Iterator
+
+ 
+
+46.for each loop
+
+ 
+
+47.Generics related ques like how it came and benefits?
+
+ 
+
+48.Thread pool, Multithreading?
+
+ 
+
+49.Design pattern in Depth?
+
+ 
+
+
+ 
+
+2nd round Questions:
+
+ 
+
+
+ 
+
+
+ 
+
+8. Log4j configuration and properties?
+
+ 
+
+9. How SubString Works Internally in Java
+
+ 
+
+10. what tools are available to in jdk jre for profile
+
+ 
+
+11. JDK Tools and Utilities
+
+ 
+
+12. Difference betweem JDK, JRE and JVM
+
+ 
+
+13. Feature in java 1.7
+
+ 
+
+14. synchronized block disadvantages in java
+
+funnelling in facebook
+
+tell me about yourself
+deployment process how it is done
+best practices followed in project (how  api and services code should bw written  )
+security measures in project(details can be asked about what you tell)
+messaging between microservices (without using rest api   achieved via kafka)
+if a task will be delayed how it is conveyed or solved
+backward compatibility in code (two jars are there how they will function simultaneously)
+real implementation of design pattern as class 
+understanding of cassandra
+web service used during deployment and details of web server
+full development life cycle, how time estimation is given
+how code is tested locally and on production
+how code review process is done
+
+
+

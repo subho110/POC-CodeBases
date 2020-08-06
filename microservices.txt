@@ -1,0 +1,58 @@
+Hi, there. This is the first of two lessons that talk about what microservices are. 
+I shall do this from a high-level and explain concepts such as decomposition, independence, and lifecycle management. 
+So the question is, what are microservices? Let's start with the definition that is often given. 
+A microservice is an engineering approach focused on decomposing applications into single-function modules with well-defined interfaces which are independently deployed and operated by small teams who own the entire lifecycle of the service. 
+Microservices accelerate delivery by minimizing communication and coordination between people while reducing the scope and risk of change. 
+If you understood that, skip straight to the end of the video. For those of you who got lost in the middle, I'll dig a little deeper.
+ There are several keywords here that I shall highlight. 
+ I want to take a look at these words or phrases in detail in order to explain exactly what a microservice is. 
+ Depending on your knowledge and your background, you may be a little surprised. Let's take a look at these phrases. 
+ First, decomposing. Here, I have an application. I've called it, MyApplication. 
+ An application has methods or procedures or functions depending on the language. 
+ In this case, it is called Verify_Data. So MyApplication is going to verify some data that has been provided.
+ It will do more things, for example, it will communicate with a web service, it will find a printer or database, and probably other things. 
+ Notice that these are not specifically related to Verify_Data but they are required to make the application do useful work.
+ Decomposing then looks at all this and says, "Well, getting a web service is not in fact something that verifies the data, it's a completely different process.
+ " Let's separate these out and make them individual small services or microservices. These services do not rely on each other. 
+ They're separate functions or operations. Next is single-function. So what does this mean? Well, look at Verify_Data. 
+ That piece of the application has a single-function to verify the data that is handed in.
+ But that does not mean that the only thing it does is verification. It could do a lot.
+ It could format the information when it is verified, it could calculate and set a limit date, it could send a request for the name associated with the ID that was handed in. 
+ All that is nevertheless a single-function or a self-contained set of processes. Well-defined interface says that you are going to define data.
+ But what type of data are you going to work with? There has to be an explicit type for the input interface.
+ For example, there is a function called Verify_Data that requires an ID as an integer.
+ If another service is going to call this function, it needs to provide exactly this type of data to exactly this function name.
+ There has to be an output interface as well. For example, we are handed back a name and a limit date.
+ Maybe this is a library, and someone is borrowing a book that must be returned by a specific date, say in two weeks.
+ The interface will be defined as returning, perhaps a string, perhaps an array, or some other complex object.
+ These services are independent. First, here's a real-world analogy that shows what independent means in this context.
+ Here, we have some rails, and on the rails, we have a train. The train is going from A to B. 
+ It functions independently of anything that might need to get from A to B. Even if nothing needs the service, the train will still run.
+ Here, we have a worker. 
+ It is someone who works at B. 
+ It is someone who wants to buy some wine at B or someone who needs to use the service of getting from A to B.
+ Transport her to point B and leaves her there. 
+ The service, the person executes is writing software or buying wine.
+ The service the train provides is getting from A to B. 
+ If that person is not there to take the train, it will provide the service anyway.
+ And if the train is not running, the software will still get written.
+ The two things are independent.
+ In terms of coding, let's see what that means. 
+ Here, there is another service, Find_DB. That's going to find databases whether you need them or not.
+ It just knows how to go and find them. 
+ The other services going to verify the data. It knows nothing about finding databases.
+ They are therefore independent, but they do have to work together. 
+ In order to return the correct information from the Verify_Data service, there has to be a communication with the Find_DB service.
+ Small teams. Well, it doesn't look like a small team to me. It looks like a big team. And look what the team is working on. 
+ It is writing code to verify data, it's writing code to link to a web service, and so on. 
+ We're back to that original collection of processes that we saw earlier.
+ You need a big team to work on all of that and the team must coordinate its work.
+ Nothing can be deployed, unless everyone has completed their part of the work.
+ A better arrangement is to split the work up and split the team up.
+ Now, we are back to developing Verify_Data as an independent object, and there is a small team working on it.
+ Find_DB is a single service and there is another small team working on it. Those teams are going to be working efficiently.
+ They can communicate easily, the members of the team know the big picture of the service they are developing, and each service can be deployed rapidly as soon as it is ready.
+ The Find_DB team does not care whether the Verify_Data team is on schedule or not. 
+ It concentrates on its own task. Entire lifecycle.
+ This is something that is unusual if you're used to writing traditional applications.
+	Traditionally, if my team has completed the code for the Find_DB service and may be tested it, although that might be a different department, the service has passed off to someone else to deal with building or deploying or maintaining the service. In microservices, that's not the case. The development team is responsible for testing, staging, deploying, debugging, maintaining. In other words, the complete lifecycle of the service. If there comes a problem, if someone telephones in the middle of the night and says, "Hey, we have a problem with the Find_DB service", I'm the one they would telephone because I'm the one who wrote the code. I'm the one who knows about it. They were not telephone some debugged team and say, "Hey, that code some other guy wrote, it doesn't work anymore". Logically, you can see that it is inefficient because the debug team has to start by understanding what the code is supposed to do before analyzing why it is not doing it anymore. There are two points remaining in the list but I shall talk to them in the second part of this lesson.

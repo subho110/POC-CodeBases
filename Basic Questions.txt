@@ -1,0 +1,44 @@
+basic questions
+
+1. diff between equals() and compareTo
+
+equals
+==
+
+String s1 = new String("abc");
+
+String s2 = new String("abc");
+
+s1 == s2        //returns false // line 1
+
+s1.compareTo(s2) // returns true //line 2
+
+s1 and s2 has different references. so not equal as == checks for reference comparison
+s1 and s2 has same value so  equal as comapareTo checks for content/value comparison
+
+--------------------------------------
+2. String buffer anbd String builder
+--------------------------------------
+
+String buffer
+every method synchronized
+At a time, only one thread allowed to operate on string buffer object
+So Thread safe by default
+Increases waiting timme of thread
+Relatively performance is low
+Introdced in 1.0
+
+
+String builder
+no method is synchronized
+At a time, multiple threads can operate on string builder object
+So not Thread safe by default
+Threads are not required to operate on string builder object
+Relatively performance is high
+Introdced in 1.5
+
+-------------------
+jdk || jvm | jre
+-------------------
+https://www.journaldev.com/546/difference-jdk-vs-jre-vs-jvm
+

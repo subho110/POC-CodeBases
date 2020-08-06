@@ -1,0 +1,39 @@
+multithreading
+
+thread
+execuiton of process
+
+pool
+group of reserved resources ready to provide service
+ 
+ best adv
+ same resource can be used for multiple action...reusability
+ 
+ 
+ As many no of times we want to connect to db, 
+ we need to make connection obj,cconnext them then destroy them
+ this process has to repeat evrytime
+ creating and destroing connection object creates connection problems
+ 
+so maintain a pool of connection object
+if anyone requires ro communicate with db ,
+we will ask connection pool to give a connection obj
+once we get connection obj,
+we cn access db using that onj
+once the work gets completed,
+instread of destroying the connection obj ,
+we return it tothe pool
+
+conncection pool
+a group of ready to use connection object 
+
+
+
+
+
+
+
+
+ 
+ 
+ 

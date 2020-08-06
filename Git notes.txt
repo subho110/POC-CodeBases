@@ -1,0 +1,33 @@
+
+
+istudies@321
+
+entire process
+
+https://www.youtube.com/watch?v=K7g4D4sdBEQ
+
+
+$ git config --global user.name "subho110"
+
+M1042000@A2ML23723 MINGW64 ~
+$ git config --global user.email "subhodip110@gmail.com"
+
+
+git init
+
+on init  a .git will be created
+ 
+git add . 
+
+git  coment -m "adfsf"
+
+git status
+
+git remote add origin https://github.com/subho110/EmployeeHubSpringBootRestCrud.g
+it
+
+git push -u origin master
+
+https://github.com/subho110/EmployeeHubSpringBootRestCrud
+
+https://attacomsian.com/blog/change-default-java-version-ubuntu

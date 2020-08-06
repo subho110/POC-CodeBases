@@ -1,0 +1,163 @@
+
+
+1. lambda exp
+
+anonymous func
+no func name
+no access modi
+no return type
+
+
+
+2. funtional interfaces-->they contains sam
+
+sam = single abstraction method
+
+
+runnable ==> run()
+callable ==> call()
+Comparable ==> comparetO()
+ActionListener ==> actionPerformed()
+
+
+3. default method & static method
+In FI,
+we can make any number of default/static method but can contain only one abstract method
+
+
+@FunctionalInterface
+using this is optional
+if using this,if any mistake is there,then error will be thrown
+
+java.util.Function 
+
+lambda exp does not generate .class file
+
+comparator contains only one:: compare()
+compare(object obj1, object obj2 )
+returns -ve iff obj1 has to come before obj2
+returns +ve iff obj1 has to come after obj2
+returns 0 iff obj1 has to come are equal
+
+in fi,
+for sorting we can use comparator and comparable,
+if and only if lambda is there 
+
+anonymous inner class::inner class and class wo having name
+can extend normal class
+can extend abstract classcna implement interface containig ny no of abstct method
+ 
+ lambda exp can imp an interf which contains a single abstract method (FI)
+ 
+ ::::::anony inn class is more effective n powerful than lambda exp
+ 
+ 
+ 
+ default method   virtual  extension method    defender method
+
+
+def method:::wo effecting  implementation if we wnat to add 
+new method to thr interface
+
+diamond access problem :::: multiple inheritance
+
+
+static::::no way related to object...so no need of class 
+class is costly n heavy whereas interface is light weighted
+
+from 1.8 java, interface can also contain static method ALSO.
+for this only static method can be accesed using interface name
+
+
+interface A{
+	p s v m1(){
+	sop(int static method )
+	}
+}
+class B implement A
+{
+	p s v main(){
+	A.m1(); .....valid
+	m1();.....invalid
+	B.m1();.....invalid
+	B b = new B();
+	B.m1();.....invalid
+	}
+}
+
+-----------------------------------------------------
+
+if all is srarix rhwn 
+http://www.agiledeveloper.com/downloads.html
+
+----------------------------------------------------------------------------------------------
+streams proivde us to differentiate from how we do to what we wnat to do b
+
+stream is an abstraction
+--non mutating
+--not modifying a collection within a stream
+--taking a set of data and applying transformation
+--pipeline
+--employ function composition
+--stateless
+--should work with pure function
+--very specialized function
+
+selection--use a filter()
+transformation--map()
+type--reduce()
+
+we look it as pipeline..does jvm see it as pipeline
+
+
+
+FILTER()
+::my explain::like a counter
+cone operation
+bunch of input coming and like a cone it narrows to a few set of values
+so from several values we go to zero values
+0 when nothing matches filter
+n when evrything matches filter
+
+
+map()
+::my explain::like a code inside a loop operation
+it is like a cylinder
+means no of input = no of output
+relation btw inp and out is 
+	:::evry single element in outp is a transformation of evry single element in ip  
+
+reduce()
+result in a singe vlue or it cud be collection depending on what we do
+we can think of it as bringing us back to concrete	
+
+
+the more ano inner class we create
+the more ano inner class we have 
+we will have big jar file
+loading those jar files will take more time
+so there will be more memory footprint once jvm will run
+in the process we end up creating garbage
+so more time we will spend on collecting garbage 
+so runtime memory footprint will also increase
+:::So this needed to be fixed::::
+a feature came across:: INvoke Dynamic
+which says  we can attach and detach   
+
+
+----------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+functional Programming
+------------------------------------------------------------------------
+inspired from jvm lang like scala 
+
+::::::what is fp??::::::
+prog style that treats computation as evaluation of mathematical functions
+avoids changing state
+avoids mutable data
+based on lambda calculus
+no iteration...no counter
+no for loop
+no vARIABLE
